@@ -1,0 +1,116 @@
+[03-Aug-2025 01:43:15 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FeatureIconHeading.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FeatureIconHeading.php on line 11
+[03-Aug-2025 01:46:24 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditFrontWithIconFeature.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditFrontWithIconFeature.php on line 13
+[03-Aug-2025 01:48:26 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePageIcon.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePageIcon.php on line 17
+[03-Aug-2025 01:50:32 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePage.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePage.php on line 14
+[03-Aug-2025 01:51:34 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditFrontFeature.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditFrontFeature.php on line 12
+[03-Aug-2025 01:53:40 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/PriceSetting.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/PriceSetting.php on line 10
+[03-Aug-2025 01:54:40 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditFaqPage.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditFaqPage.php on line 8
+[03-Aug-2025 01:55:44 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/ContactPage.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/ContactPage.php on line 13
+[03-Aug-2025 01:56:47 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FeatureHeading.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FeatureHeading.php on line 11
+[03-Aug-2025 01:57:48 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditReviewPage.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditReviewPage.php on line 8
+[03-Aug-2025 05:38:03 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/SaveHeading.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/SaveHeading.php on line 10
+[04-Aug-2025 07:07:06 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/ReviewPage.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/ReviewPage.php on line 12
+[04-Aug-2025 07:09:07 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/HeaderPage.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/HeaderPage.php on line 12
+[04-Aug-2025 10:40:39 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FaqPage.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FaqPage.php on line 12
+[09-Aug-2025 15:29:30 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePageIcon.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePageIcon.php on line 17
+[09-Aug-2025 15:34:23 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePage.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePage.php on line 14
+[09-Aug-2025 15:41:54 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditFrontFeature.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditFrontFeature.php on line 12
+[09-Aug-2025 15:51:20 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FaqPage.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FaqPage.php on line 12
+[09-Aug-2025 16:58:25 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/PriceSetting.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/PriceSetting.php on line 10
+[09-Aug-2025 17:22:08 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/SaveHeading.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/SaveHeading.php on line 10
+[09-Aug-2025 17:22:12 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/ReviewPage.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/ReviewPage.php on line 12
+[09-Aug-2025 19:03:43 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/HeaderPage.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/HeaderPage.php on line 12
+[09-Aug-2025 19:31:46 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/ContactPage.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/ContactPage.php on line 13
+[09-Aug-2025 19:41:46 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FeatureHeading.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FeatureHeading.php on line 11
+[09-Aug-2025 21:32:27 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/SaveHeading.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/SaveHeading.php on line 10
+[09-Aug-2025 23:03:04 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FaqPage.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FaqPage.php on line 12
+[10-Aug-2025 00:12:09 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditReviewPage.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditReviewPage.php on line 8
+[10-Aug-2025 03:34:17 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditReviewPage.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/EditReviewPage.php on line 8
+[10-Aug-2025 05:40:07 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePageIcon.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/LandingSite/FrontFeaturePageIcon.php on line 17

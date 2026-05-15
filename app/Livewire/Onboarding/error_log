@@ -1,0 +1,8 @@
+[04-Aug-2025 07:20:52 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Onboarding/OnboardingSteps.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Onboarding/OnboardingSteps.php on line 9
+[09-Aug-2025 16:55:27 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Onboarding/OnboardingSteps.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Onboarding/OnboardingSteps.php on line 9

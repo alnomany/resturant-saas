@@ -1,0 +1,4 @@
+[09-Aug-2025 22:18:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/kot/kotCard.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/kot/kotCard.php on line 10

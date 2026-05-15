@@ -1,0 +1,20 @@
+[04-Aug-2025 06:44:52 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php on line 11
+[05-Aug-2025 11:42:22 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php on line 11
+[05-Aug-2025 12:06:21 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php on line 11
+[05-Aug-2025 12:20:00 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php on line 11
+[09-Aug-2025 19:55:02 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/Table/Tables.php on line 11

@@ -1,0 +1,24 @@
+[03-Aug-2025 20:54:39 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentMethodTab.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentMethodTab.php on line 10
+[03-Aug-2025 20:56:41 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentRequestsList.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentRequestsList.php on line 14
+[09-Aug-2025 15:33:31 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentMethodTab.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentMethodTab.php on line 10
+[10-Aug-2025 01:32:38 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentRequestsList.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentRequestsList.php on line 14
+[10-Aug-2025 05:02:48 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentMethodTab.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentMethodTab.php on line 10
+[10-Aug-2025 06:55:48 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentRequestsList.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/OfflinePayment/OfflinePaymentRequestsList.php on line 14

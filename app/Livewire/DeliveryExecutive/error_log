@@ -1,0 +1,32 @@
+[03-Aug-2025 19:30:37 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/ShowOrders.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/ShowOrders.php on line 7
+[03-Aug-2025 19:32:39 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveList.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveList.php on line 10
+[03-Aug-2025 19:40:03 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveTable.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveTable.php on line 12
+[09-Aug-2025 16:53:39 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveTable.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveTable.php on line 12
+[09-Aug-2025 19:13:01 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/ShowOrders.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/ShowOrders.php on line 7
+[09-Aug-2025 20:02:33 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveList.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveList.php on line 10
+[10-Aug-2025 03:35:15 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveTable.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveTable.php on line 12
+[10-Aug-2025 07:05:04 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveList.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/DeliveryExecutive/DeliveryExecutiveList.php on line 10

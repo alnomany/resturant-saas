@@ -1,0 +1,20 @@
+[01-Aug-2025 23:22:16 UTC] PHP Fatal error:  Uncaught Error: Interface "Mike42\Escpos\PrintConnectors\PrintConnector" not found in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php on line 7
+[06-Aug-2025 18:35:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Mike42\Escpos\PrintConnectors\PrintConnector" not found in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php on line 7
+[07-Aug-2025 07:14:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Mike42\Escpos\PrintConnectors\PrintConnector" not found in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php on line 7
+[08-Aug-2025 16:50:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Mike42\Escpos\PrintConnectors\PrintConnector" not found in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php on line 7
+[08-Aug-2025 19:12:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Mike42\Escpos\PrintConnectors\PrintConnector" not found in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Traits/InMemoryConnector.php on line 7

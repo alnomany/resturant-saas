@@ -1,0 +1,80 @@
+[31-Jul-2025 15:16:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/web.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/web.php on line 54
+[31-Jul-2025 15:20:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/api.php on line 9
+[31-Jul-2025 15:21:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/api.php on line 9
+[31-Jul-2025 15:25:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/web.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/web.php on line 54
+[31-Jul-2025 15:28:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Schedule" not found in /home/emlhdnzr/pos.emlhor.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/console.php on line 6
+[31-Jul-2025 15:34:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Schedule" not found in /home/emlhdnzr/pos.emlhor.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/console.php on line 6
+[06-Aug-2025 12:44:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/web.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/web.php on line 54
+[06-Aug-2025 16:58:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/api.php on line 9
+[06-Aug-2025 17:33:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/api.php on line 9
+[06-Aug-2025 18:47:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Schedule" not found in /home/emlhdnzr/pos.emlhor.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/console.php on line 6
+[07-Aug-2025 04:24:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Schedule" not found in /home/emlhdnzr/pos.emlhor.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/console.php on line 6
+[07-Aug-2025 08:31:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/web.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/web.php on line 54
+[08-Aug-2025 02:08:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/web.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/web.php on line 54
+[08-Aug-2025 13:25:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Schedule" not found in /home/emlhdnzr/pos.emlhor.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/console.php on line 6
+[09-Aug-2025 00:30:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/web.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/web.php on line 54
+[09-Aug-2025 03:29:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Schedule" not found in /home/emlhdnzr/pos.emlhor.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/console.php on line 6
+[09-Aug-2025 08:41:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/api.php on line 9
+[09-Aug-2025 10:21:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/api.php on line 9
+[09-Aug-2025 15:22:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Schedule" not found in /home/emlhdnzr/pos.emlhor.com/routes/console.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/console.php on line 6
+[09-Aug-2025 21:31:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/emlhdnzr/pos.emlhor.com/routes/web.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/routes/web.php on line 54

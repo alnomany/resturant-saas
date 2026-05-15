@@ -1,0 +1,1980 @@
+[01-Aug-2025 00:07:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[01-Aug-2025 00:10:37 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 00:14:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[01-Aug-2025 00:17:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[01-Aug-2025 00:20:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 00:22:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 00:30:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 00:33:19 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 00:46:21 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 00:50:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[01-Aug-2025 00:51:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[01-Aug-2025 01:11:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[01-Aug-2025 01:16:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[01-Aug-2025 01:53:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[01-Aug-2025 01:54:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 01:55:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[01-Aug-2025 01:57:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 01:58:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 01:59:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[01-Aug-2025 02:01:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[01-Aug-2025 02:03:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 02:07:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 02:08:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[01-Aug-2025 02:09:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[01-Aug-2025 02:11:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[01-Aug-2025 02:11:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 02:13:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[01-Aug-2025 02:14:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[01-Aug-2025 02:16:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 02:16:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 02:17:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 02:17:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[01-Aug-2025 02:21:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[01-Aug-2025 02:23:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 02:26:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[01-Aug-2025 02:35:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[01-Aug-2025 02:37:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[01-Aug-2025 02:38:37 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[01-Aug-2025 02:41:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 02:42:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 02:44:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[01-Aug-2025 02:46:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[01-Aug-2025 02:47:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 02:49:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 02:54:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 02:55:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 02:56:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[01-Aug-2025 02:57:29 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 02:59:47 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[01-Aug-2025 03:01:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[01-Aug-2025 03:02:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 03:04:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[01-Aug-2025 03:05:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 03:06:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[01-Aug-2025 03:09:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[01-Aug-2025 03:10:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[01-Aug-2025 03:11:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[01-Aug-2025 03:13:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[01-Aug-2025 03:15:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[01-Aug-2025 05:05:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php on line 9
+[01-Aug-2025 05:06:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php on line 8
+[01-Aug-2025 05:12:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php on line 8
+[01-Aug-2025 05:21:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php on line 9
+[01-Aug-2025 06:37:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php on line 7
+[01-Aug-2025 06:40:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php on line 7
+[01-Aug-2025 12:51:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php on line 10
+[01-Aug-2025 12:54:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php on line 11
+[01-Aug-2025 13:00:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php on line 8
+[01-Aug-2025 13:01:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSubscription.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSubscription.php on line 8
+[01-Aug-2025 13:57:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php on line 9
+[01-Aug-2025 17:55:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItemModifierOption.php on line 8
+[01-Aug-2025 18:24:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php on line 17
+[01-Aug-2025 18:27:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php on line 26
+[01-Aug-2025 23:23:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php on line 9
+[02-Aug-2025 02:10:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php on line 9
+[02-Aug-2025 04:20:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php on line 7
+[02-Aug-2025 05:55:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php on line 10
+[02-Aug-2025 06:04:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalCurrency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalCurrency.php on line 9
+[02-Aug-2025 15:39:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php on line 10
+[02-Aug-2025 15:44:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php on line 10
+[02-Aug-2025 15:47:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php on line 13
+[02-Aug-2025 15:52:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php on line 10
+[02-Aug-2025 17:25:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php on line 10
+[02-Aug-2025 18:22:29 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php on line 11
+[02-Aug-2025 21:44:55 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php on line 10
+[03-Aug-2025 01:21:18 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php on line 11
+[03-Aug-2025 01:24:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php on line 9
+[03-Aug-2025 01:25:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[03-Aug-2025 02:25:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php on line 10
+[03-Aug-2025 02:26:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php on line 9
+[03-Aug-2025 02:27:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php on line 9
+[03-Aug-2025 02:34:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php on line 22
+[03-Aug-2025 02:36:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php on line 11
+[03-Aug-2025 02:38:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php on line 12
+[03-Aug-2025 02:40:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php on line 12
+[03-Aug-2025 02:42:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php on line 11
+[03-Aug-2025 04:46:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php on line 9
+[03-Aug-2025 04:49:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php on line 8
+[03-Aug-2025 04:50:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php on line 11
+[03-Aug-2025 04:54:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php on line 15
+[03-Aug-2025 05:26:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php on line 7
+[03-Aug-2025 05:41:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotPlace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotPlace.php on line 11
+[03-Aug-2025 05:42:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php on line 9
+[03-Aug-2025 13:31:48 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php on line 10
+[03-Aug-2025 13:32:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php on line 9
+[03-Aug-2025 13:36:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php on line 9
+[03-Aug-2025 13:38:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php on line 9
+[03-Aug-2025 13:39:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php on line 9
+[03-Aug-2025 13:49:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php on line 9
+[03-Aug-2025 19:01:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php on line 13
+[03-Aug-2025 19:01:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php on line 10
+[03-Aug-2025 19:02:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php on line 8
+[03-Aug-2025 19:03:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php on line 11
+[03-Aug-2025 19:09:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php on line 9
+[03-Aug-2025 19:13:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php on line 11
+[03-Aug-2025 19:14:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php on line 7
+[03-Aug-2025 19:16:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php on line 11
+[03-Aug-2025 19:16:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php on line 8
+[03-Aug-2025 21:07:18 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php on line 13
+[03-Aug-2025 21:47:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php on line 11
+[03-Aug-2025 21:52:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php on line 8
+[03-Aug-2025 21:55:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php on line 29
+[03-Aug-2025 21:56:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php on line 12
+[03-Aug-2025 23:43:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php on line 10
+[03-Aug-2025 23:48:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php on line 11
+[03-Aug-2025 23:49:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php on line 10
+[03-Aug-2025 23:54:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php on line 41
+[04-Aug-2025 00:46:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php on line 7
+[04-Aug-2025 00:48:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php on line 8
+[04-Aug-2025 00:51:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php on line 10
+[04-Aug-2025 02:36:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php on line 7
+[06-Aug-2025 09:23:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php on line 10
+[06-Aug-2025 09:43:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php on line 9
+[06-Aug-2025 10:04:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php on line 8
+[06-Aug-2025 10:25:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php on line 10
+[06-Aug-2025 10:33:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php on line 7
+[06-Aug-2025 10:33:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php on line 41
+[06-Aug-2025 10:54:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php on line 10
+[06-Aug-2025 11:26:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php on line 9
+[06-Aug-2025 11:27:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php on line 29
+[06-Aug-2025 11:36:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php on line 10
+[06-Aug-2025 11:47:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php on line 9
+[06-Aug-2025 11:48:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php on line 9
+[06-Aug-2025 11:48:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php on line 12
+[06-Aug-2025 11:48:55 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php on line 11
+[06-Aug-2025 12:07:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php on line 17
+[06-Aug-2025 12:20:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php on line 11
+[06-Aug-2025 12:27:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php on line 11
+[06-Aug-2025 12:28:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[06-Aug-2025 12:43:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php on line 9
+[06-Aug-2025 12:44:19 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php on line 26
+[06-Aug-2025 12:54:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php on line 8
+[06-Aug-2025 12:59:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php on line 9
+[06-Aug-2025 12:59:48 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php on line 11
+[06-Aug-2025 13:31:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[06-Aug-2025 13:33:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php on line 9
+[06-Aug-2025 13:43:37 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php on line 10
+[06-Aug-2025 13:45:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php on line 8
+[06-Aug-2025 13:52:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php on line 7
+[06-Aug-2025 14:05:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php on line 8
+[06-Aug-2025 14:21:55 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php on line 9
+[06-Aug-2025 14:23:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php on line 11
+[06-Aug-2025 14:43:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php on line 10
+[06-Aug-2025 15:17:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php on line 12
+[06-Aug-2025 15:33:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php on line 7
+[06-Aug-2025 15:39:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php on line 11
+[06-Aug-2025 15:55:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php on line 9
+[06-Aug-2025 15:59:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php on line 11
+[06-Aug-2025 16:06:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php on line 10
+[06-Aug-2025 16:22:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php on line 7
+[06-Aug-2025 16:22:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItemModifierOption.php on line 8
+[06-Aug-2025 16:23:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php on line 15
+[06-Aug-2025 16:49:21 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php on line 11
+[06-Aug-2025 16:52:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php on line 10
+[06-Aug-2025 17:08:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php on line 9
+[06-Aug-2025 17:11:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php on line 9
+[06-Aug-2025 17:11:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[06-Aug-2025 17:11:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[06-Aug-2025 17:30:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[06-Aug-2025 17:32:18 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php on line 9
+[06-Aug-2025 17:55:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[06-Aug-2025 18:06:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[06-Aug-2025 18:11:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Branch.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Branch.php on line 17
+[06-Aug-2025 18:13:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php on line 9
+[06-Aug-2025 18:34:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php on line 9
+[06-Aug-2025 18:44:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php on line 11
+[06-Aug-2025 18:46:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php on line 11
+[06-Aug-2025 18:47:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php on line 9
+[06-Aug-2025 18:59:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php on line 22
+[06-Aug-2025 19:01:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php on line 12
+[06-Aug-2025 19:05:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php on line 7
+[06-Aug-2025 19:06:29 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php on line 12
+[06-Aug-2025 19:12:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php on line 12
+[06-Aug-2025 19:12:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/User.php on line 23
+[06-Aug-2025 19:13:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php on line 13
+[06-Aug-2025 19:22:28 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php on line 10
+[06-Aug-2025 19:23:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php on line 13
+[06-Aug-2025 19:32:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php on line 9
+[06-Aug-2025 19:33:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php on line 7
+[06-Aug-2025 19:45:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Branch.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Branch.php on line 17
+[06-Aug-2025 19:54:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Area.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Area.php on line 10
+[06-Aug-2025 20:02:00 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php on line 13
+[06-Aug-2025 20:48:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php on line 9
+[06-Aug-2025 20:57:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php on line 9
+[06-Aug-2025 20:57:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php on line 17
+[06-Aug-2025 21:02:00 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php on line 13
+[06-Aug-2025 21:02:43 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\Permission\Models\Role" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Role.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Role.php on line 8
+[06-Aug-2025 21:03:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php on line 10
+[06-Aug-2025 21:04:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[06-Aug-2025 21:07:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php on line 8
+[06-Aug-2025 21:08:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php on line 9
+[06-Aug-2025 21:11:00 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php on line 10
+[06-Aug-2025 21:15:21 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php on line 8
+[06-Aug-2025 21:15:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php on line 11
+[06-Aug-2025 21:20:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php on line 8
+[06-Aug-2025 21:21:37 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[06-Aug-2025 21:49:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Flag.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Flag.php on line 7
+[06-Aug-2025 21:53:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php on line 10
+[06-Aug-2025 22:03:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php on line 10
+[06-Aug-2025 22:09:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php on line 41
+[06-Aug-2025 22:33:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[06-Aug-2025 22:34:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItemModifierOption.php on line 8
+[06-Aug-2025 22:53:19 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php on line 11
+[06-Aug-2025 22:55:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php on line 11
+[06-Aug-2025 23:02:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php on line 10
+[06-Aug-2025 23:02:56 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[06-Aug-2025 23:04:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php on line 8
+[06-Aug-2025 23:13:19 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php on line 11
+[06-Aug-2025 23:26:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php on line 9
+[06-Aug-2025 23:27:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[06-Aug-2025 23:27:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php on line 8
+[06-Aug-2025 23:34:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php on line 9
+[06-Aug-2025 23:35:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php on line 8
+[06-Aug-2025 23:55:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php on line 11
+[07-Aug-2025 00:12:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php on line 8
+[07-Aug-2025 00:13:29 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php on line 11
+[07-Aug-2025 00:14:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php on line 11
+[07-Aug-2025 00:24:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php on line 9
+[07-Aug-2025 00:26:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php on line 7
+[07-Aug-2025 00:32:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Flag.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Flag.php on line 7
+[07-Aug-2025 00:33:47 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php on line 10
+[07-Aug-2025 00:34:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSubscription.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSubscription.php on line 8
+[07-Aug-2025 00:44:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php on line 15
+[07-Aug-2025 00:52:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php on line 12
+[07-Aug-2025 00:53:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php on line 9
+[07-Aug-2025 01:12:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php on line 10
+[07-Aug-2025 01:22:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php on line 10
+[07-Aug-2025 02:22:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotPlace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotPlace.php on line 11
+[07-Aug-2025 02:41:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php on line 7
+[07-Aug-2025 02:44:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php on line 9
+[07-Aug-2025 02:53:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php on line 9
+[07-Aug-2025 03:01:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php on line 9
+[07-Aug-2025 03:03:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php on line 9
+[07-Aug-2025 03:14:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php on line 10
+[07-Aug-2025 03:24:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php on line 9
+[07-Aug-2025 03:34:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Menu.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Menu.php on line 12
+[07-Aug-2025 03:42:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php on line 11
+[07-Aug-2025 03:45:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php on line 10
+[07-Aug-2025 03:53:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php on line 8
+[07-Aug-2025 04:11:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotPlace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotPlace.php on line 11
+[07-Aug-2025 04:12:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php on line 22
+[07-Aug-2025 04:13:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php on line 7
+[07-Aug-2025 04:25:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php on line 12
+[07-Aug-2025 04:31:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php on line 7
+[07-Aug-2025 04:53:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php on line 8
+[07-Aug-2025 04:57:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php on line 11
+[07-Aug-2025 05:01:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php on line 11
+[07-Aug-2025 05:02:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php on line 12
+[07-Aug-2025 05:02:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[07-Aug-2025 05:03:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php on line 10
+[07-Aug-2025 05:11:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php on line 7
+[07-Aug-2025 05:12:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php on line 13
+[07-Aug-2025 05:13:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php on line 10
+[07-Aug-2025 05:15:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php on line 11
+[07-Aug-2025 05:22:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSubscription.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSubscription.php on line 8
+[07-Aug-2025 05:35:48 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\Permission\Models\Role" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Role.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Role.php on line 8
+[07-Aug-2025 05:52:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php on line 7
+[07-Aug-2025 05:54:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[07-Aug-2025 06:46:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[07-Aug-2025 06:52:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Area.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Area.php on line 10
+[07-Aug-2025 06:54:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalCurrency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalCurrency.php on line 9
+[07-Aug-2025 06:56:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php on line 10
+[07-Aug-2025 06:56:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php on line 9
+[07-Aug-2025 06:57:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php on line 13
+[07-Aug-2025 07:00:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php on line 10
+[07-Aug-2025 07:04:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php on line 9
+[07-Aug-2025 07:09:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php on line 10
+[07-Aug-2025 07:10:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalCurrency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalCurrency.php on line 9
+[07-Aug-2025 07:22:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php on line 10
+[07-Aug-2025 07:42:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php on line 8
+[07-Aug-2025 07:55:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php on line 29
+[07-Aug-2025 08:06:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php on line 9
+[07-Aug-2025 08:10:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[07-Aug-2025 08:20:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php on line 26
+[07-Aug-2025 08:22:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php on line 11
+[07-Aug-2025 08:23:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php on line 10
+[07-Aug-2025 08:54:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Menu.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Menu.php on line 12
+[07-Aug-2025 08:57:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php on line 9
+[07-Aug-2025 09:03:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/User.php on line 23
+[07-Aug-2025 09:24:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php on line 9
+[07-Aug-2025 09:26:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php on line 12
+[07-Aug-2025 09:42:55 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php on line 9
+[07-Aug-2025 09:52:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php on line 10
+[07-Aug-2025 10:02:29 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[07-Aug-2025 18:46:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php on line 8
+[07-Aug-2025 19:23:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php on line 11
+[07-Aug-2025 19:24:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php on line 7
+[07-Aug-2025 19:26:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php on line 12
+[07-Aug-2025 19:29:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php on line 11
+[07-Aug-2025 19:31:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php on line 11
+[07-Aug-2025 19:31:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php on line 10
+[07-Aug-2025 19:41:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php on line 8
+[07-Aug-2025 19:43:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php on line 26
+[07-Aug-2025 20:01:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php on line 9
+[07-Aug-2025 21:52:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php on line 9
+[07-Aug-2025 23:01:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php on line 9
+[08-Aug-2025 00:07:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php on line 7
+[08-Aug-2025 00:27:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php on line 9
+[08-Aug-2025 01:17:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php on line 10
+[08-Aug-2025 01:33:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php on line 10
+[08-Aug-2025 01:42:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php on line 11
+[08-Aug-2025 02:21:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php on line 11
+[08-Aug-2025 02:32:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php on line 10
+[08-Aug-2025 02:42:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php on line 8
+[08-Aug-2025 04:41:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php on line 7
+[08-Aug-2025 05:51:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[08-Aug-2025 06:42:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php on line 29
+[08-Aug-2025 08:03:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php on line 9
+[08-Aug-2025 08:05:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php on line 41
+[08-Aug-2025 08:05:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php on line 9
+[08-Aug-2025 08:48:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php on line 11
+[08-Aug-2025 09:10:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php on line 17
+[08-Aug-2025 13:14:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php on line 12
+[08-Aug-2025 13:17:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[08-Aug-2025 13:19:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php on line 15
+[08-Aug-2025 13:26:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RazorpayPayment.php on line 9
+[08-Aug-2025 13:26:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php on line 9
+[08-Aug-2025 13:26:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php on line 11
+[08-Aug-2025 13:26:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php on line 26
+[08-Aug-2025 13:27:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php on line 8
+[08-Aug-2025 13:51:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php on line 8
+[08-Aug-2025 13:53:00 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php on line 9
+[08-Aug-2025 14:32:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php on line 11
+[08-Aug-2025 14:54:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[08-Aug-2025 14:58:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php on line 8
+[08-Aug-2025 15:02:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php on line 7
+[08-Aug-2025 15:07:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php on line 11
+[08-Aug-2025 15:11:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php on line 8
+[08-Aug-2025 16:15:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Area.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Area.php on line 10
+[08-Aug-2025 16:23:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php on line 7
+[08-Aug-2025 16:27:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFaq.php on line 10
+[08-Aug-2025 16:29:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/User.php on line 23
+[08-Aug-2025 16:52:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php on line 11
+[08-Aug-2025 16:52:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php on line 9
+[08-Aug-2025 17:02:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php on line 9
+[08-Aug-2025 17:16:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php on line 9
+[08-Aug-2025 17:26:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php on line 9
+[08-Aug-2025 17:52:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php on line 13
+[08-Aug-2025 17:56:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php on line 11
+[08-Aug-2025 18:31:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Menu.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Menu.php on line 12
+[08-Aug-2025 18:43:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php on line 8
+[08-Aug-2025 18:44:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Flag.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Flag.php on line 7
+[08-Aug-2025 18:56:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Country.php on line 9
+[08-Aug-2025 19:25:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PusherSetting.php on line 7
+[08-Aug-2025 19:37:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php on line 12
+[08-Aug-2025 19:42:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[08-Aug-2025 19:44:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php on line 22
+[08-Aug-2025 19:53:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php on line 12
+[08-Aug-2025 19:53:47 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php on line 8
+[08-Aug-2025 20:12:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[08-Aug-2025 20:35:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php on line 10
+[08-Aug-2025 20:35:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Branch.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Branch.php on line 17
+[08-Aug-2025 20:38:20 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php on line 10
+[08-Aug-2025 21:13:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php on line 10
+[08-Aug-2025 21:14:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Area.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Area.php on line 10
+[08-Aug-2025 21:26:43 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItemModifierOption.php on line 8
+[08-Aug-2025 21:31:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php on line 7
+[08-Aug-2025 21:42:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Payment.php on line 11
+[08-Aug-2025 21:54:28 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php on line 10
+[08-Aug-2025 21:55:48 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Menu.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Menu.php on line 12
+[08-Aug-2025 22:02:28 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php on line 9
+[08-Aug-2025 22:04:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php on line 9
+[08-Aug-2025 22:22:43 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderItem.php on line 11
+[08-Aug-2025 22:25:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php on line 9
+[08-Aug-2025 22:32:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php on line 9
+[08-Aug-2025 22:33:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php on line 11
+[08-Aug-2025 22:33:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php on line 10
+[08-Aug-2025 22:34:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/User.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/User.php on line 23
+[08-Aug-2025 22:43:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php on line 7
+[08-Aug-2025 22:52:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php on line 11
+[08-Aug-2025 23:01:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPayfastPayment.php on line 9
+[08-Aug-2025 23:02:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php on line 10
+[08-Aug-2025 23:12:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/WaiterRequest.php on line 11
+[08-Aug-2025 23:41:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php on line 11
+[08-Aug-2025 23:42:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php on line 7
+[08-Aug-2025 23:43:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Module.php on line 11
+[08-Aug-2025 23:53:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReceiptSetting.php on line 12
+[08-Aug-2025 23:57:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalCurrency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalCurrency.php on line 9
+[09-Aug-2025 00:05:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FlutterwavePayment.php on line 8
+[09-Aug-2025 00:32:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php on line 10
+[09-Aug-2025 00:32:37 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php on line 8
+[09-Aug-2025 00:55:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontDetail.php on line 10
+[09-Aug-2025 01:05:28 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php on line 13
+[09-Aug-2025 01:07:40 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalInvoice.php on line 8
+[09-Aug-2025 01:11:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php on line 9
+[09-Aug-2025 01:11:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php on line 12
+[09-Aug-2025 01:22:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php on line 9
+[09-Aug-2025 01:31:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php on line 9
+[09-Aug-2025 02:16:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php on line 10
+[09-Aug-2025 02:38:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[09-Aug-2025 02:41:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php on line 12
+[09-Aug-2025 02:41:55 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php on line 13
+[09-Aug-2025 02:44:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php on line 9
+[09-Aug-2025 03:01:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StripePayment.php on line 9
+[09-Aug-2025 03:10:05 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\Permission\Models\Role" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Role.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Role.php on line 8
+[09-Aug-2025 03:54:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BaseModel.php on line 7
+[09-Aug-2025 04:05:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[09-Aug-2025 04:09:00 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php on line 10
+[09-Aug-2025 04:09:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MultipleOrder.php on line 9
+[09-Aug-2025 04:12:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Printer.php on line 11
+[09-Aug-2025 04:14:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OnboardingStep.php on line 10
+[09-Aug-2025 04:14:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Flag.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Flag.php on line 7
+[09-Aug-2025 04:15:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Currency.php on line 9
+[09-Aug-2025 04:31:08 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php on line 7
+[09-Aug-2025 04:31:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Expenses.php on line 10
+[09-Aug-2025 05:05:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php on line 10
+[09-Aug-2025 05:15:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php on line 11
+[09-Aug-2025 05:25:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[09-Aug-2025 05:25:18 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderHistory.php on line 7
+[09-Aug-2025 05:33:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/EmailSetting.php on line 8
+[09-Aug-2025 05:38:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePaymentMethod.php on line 7
+[09-Aug-2025 05:42:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotPlace.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotPlace.php on line 11
+[09-Aug-2025 05:52:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemCategory.php on line 13
+[09-Aug-2025 05:52:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotSetting.php on line 9
+[09-Aug-2025 06:02:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantTax.php on line 10
+[09-Aug-2025 06:02:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Package.php on line 10
+[09-Aug-2025 06:56:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryExecutive.php on line 10
+[09-Aug-2025 07:02:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Reservation.php on line 10
+[09-Aug-2025 07:04:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItem.php on line 13
+[09-Aug-2025 07:10:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItem.php on line 22
+[09-Aug-2025 07:13:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SuperadminPaymentGateway.php on line 8
+[09-Aug-2025 08:09:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DesktopApplication.php on line 8
+[09-Aug-2025 08:23:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemVariation.php on line 9
+[09-Aug-2025 08:29:39 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php on line 17
+[09-Aug-2025 08:32:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroupTranslation.php on line 8
+[09-Aug-2025 08:33:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ReservationSetting.php on line 10
+[09-Aug-2025 08:34:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierOption.php on line 11
+[09-Aug-2025 08:34:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OfflinePlanChange.php on line 9
+[09-Aug-2025 08:34:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php on line 10
+[09-Aug-2025 08:39:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php on line 29
+[09-Aug-2025 09:26:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php on line 41
+[09-Aug-2025 09:34:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/NotificationSetting.php on line 9
+[09-Aug-2025 09:44:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PrintJob.php on line 12
+[09-Aug-2025 10:02:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Branch.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Branch.php on line 17
+[09-Aug-2025 10:22:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/LanguageSetting.php on line 9
+[09-Aug-2025 11:05:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSubscription.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSubscription.php on line 8
+[09-Aug-2025 11:30:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontFeature.php on line 11
+[09-Aug-2025 12:14:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaymentGatewayCredential.php on line 11
+[09-Aug-2025 13:02:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotCancelReason.php on line 9
+[09-Aug-2025 13:10:55 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php on line 15
+[09-Aug-2025 13:32:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ModifierGroup.php on line 13
+[09-Aug-2025 13:32:46 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\Permission\Models\Role" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Role.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Role.php on line 8
+[09-Aug-2025 13:41:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/BranchDeliverySetting.php on line 12
+[09-Aug-2025 15:24:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Tax.php on line 9
+[09-Aug-2025 16:47:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/StorageSetting.php on line 29
+[09-Aug-2025 16:49:44 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php on line 11
+[09-Aug-2025 16:54:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantCharge.php on line 10
+[09-Aug-2025 16:58:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Contact.php on line 10
+[09-Aug-2025 17:12:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Kot.php on line 12
+[09-Aug-2025 17:12:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/DeliveryFeeTier.php on line 9
+[09-Aug-2025 17:22:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php on line 26
+[09-Aug-2025 20:01:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php on line 11
+[09-Aug-2025 20:21:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderCharge.php on line 7
+[09-Aug-2025 20:55:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ExpenseCategory.php on line 10
+[09-Aug-2025 21:23:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/MenuItemTranslation.php on line 7
+[09-Aug-2025 22:16:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PackageModule.php on line 7
+[09-Aug-2025 22:41:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/AdminPaystackPayment.php on line 9
+[09-Aug-2025 22:52:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php on line 8
+[09-Aug-2025 23:41:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantPayment.php on line 11
+[09-Aug-2025 23:43:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/KotItemModifierOption.php on line 8
+[10-Aug-2025 00:56:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FileStorage.php on line 41
+[10-Aug-2025 01:00:07 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrder.php on line 8
+[10-Aug-2025 01:00:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomMenu.php on line 11
+[10-Aug-2025 02:02:38 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/ItemModifier.php on line 10
+[10-Aug-2025 03:33:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Table.php on line 26
+[10-Aug-2025 03:51:58 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/PaypalPayment.php on line 8
+[10-Aug-2025 04:35:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/CustomerAddress.php on line 9
+[10-Aug-2025 04:52:18 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/OrderTax.php on line 9
+[10-Aug-2025 05:42:09 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/RestaurantSetting.php on line 7
+[10-Aug-2025 05:43:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/GlobalSetting.php on line 11
+[10-Aug-2025 05:53:48 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/SplitOrderItem.php on line 8
+[10-Aug-2025 06:49:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Order.php on line 17
+[10-Aug-2025 07:02:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Customer.php on line 12
+[10-Aug-2025 07:06:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/Restaurant.php on line 15
+[10-Aug-2025 07:21:29 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\BaseModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Models/FrontReviewSetting.php on line 11

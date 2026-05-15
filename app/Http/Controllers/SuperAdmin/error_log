@@ -1,0 +1,36 @@
+[05-Aug-2025 05:16:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PayFastWebhookController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PayFastWebhookController.php on line 15
+[05-Aug-2025 05:19:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/FlutterwaveWebhookController.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/FlutterwaveWebhookController.php on line 17
+[05-Aug-2025 05:21:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PaystackWebhookController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PaystackWebhookController.php on line 12
+[05-Aug-2025 05:26:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/RazorpayWebhookController.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/RazorpayWebhookController.php on line 21
+[05-Aug-2025 05:46:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/StripeWebhookController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/StripeWebhookController.php on line 20
+[06-Aug-2025 14:42:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/FlutterwaveController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/FlutterwaveController.php on line 20
+[07-Aug-2025 17:58:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PaystackController.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PaystackController.php on line 21
+[07-Aug-2025 21:43:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PayfastController.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PayfastController.php on line 22
+[08-Aug-2025 02:40:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PaypalController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Http/Controllers/SuperAdmin/PaypalController.php on line 16

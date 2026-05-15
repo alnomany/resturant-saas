@@ -1,0 +1,300 @@
+[01-Aug-2025 23:25:31 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php on line 9
+[03-Aug-2025 13:24:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php on line 9
+[03-Aug-2025 20:57:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php on line 9
+[04-Aug-2025 03:08:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php on line 9
+[04-Aug-2025 03:11:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php on line 9
+[04-Aug-2025 10:28:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php on line 9
+[04-Aug-2025 10:38:33 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php on line 9
+[04-Aug-2025 22:07:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php on line 9
+[04-Aug-2025 22:41:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php on line 8
+[04-Aug-2025 22:50:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php on line 10
+[04-Aug-2025 22:54:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php on line 8
+[05-Aug-2025 12:22:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php on line 10
+[06-Aug-2025 23:58:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php on line 9
+[07-Aug-2025 00:01:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php on line 9
+[07-Aug-2025 00:02:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php on line 9
+[07-Aug-2025 00:04:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php on line 9
+[07-Aug-2025 00:08:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php on line 9
+[07-Aug-2025 00:09:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php on line 9
+[07-Aug-2025 00:10:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php on line 8
+[07-Aug-2025 00:11:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php on line 10
+[07-Aug-2025 00:13:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php on line 9
+[07-Aug-2025 00:15:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php on line 9
+[07-Aug-2025 00:16:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php on line 10
+[07-Aug-2025 00:17:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php on line 8
+[07-Aug-2025 00:32:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php on line 9
+[07-Aug-2025 00:33:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php on line 9
+[07-Aug-2025 00:34:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php on line 9
+[07-Aug-2025 00:35:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php on line 9
+[07-Aug-2025 00:38:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php on line 9
+[07-Aug-2025 00:39:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php on line 9
+[07-Aug-2025 00:40:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php on line 10
+[07-Aug-2025 00:41:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php on line 8
+[07-Aug-2025 00:42:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php on line 8
+[07-Aug-2025 00:43:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php on line 10
+[07-Aug-2025 00:45:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php on line 9
+[07-Aug-2025 00:49:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php on line 9
+[07-Aug-2025 00:52:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php on line 9
+[07-Aug-2025 00:53:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php on line 9
+[07-Aug-2025 00:54:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php on line 9
+[07-Aug-2025 00:55:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php on line 9
+[07-Aug-2025 00:56:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php on line 9
+[07-Aug-2025 01:01:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php on line 8
+[07-Aug-2025 01:02:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php on line 9
+[07-Aug-2025 01:03:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php on line 9
+[07-Aug-2025 01:04:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php on line 10
+[07-Aug-2025 01:09:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php on line 8
+[07-Aug-2025 01:10:14 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php on line 10
+[08-Aug-2025 13:28:32 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php on line 10
+[08-Aug-2025 13:28:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php on line 10
+[08-Aug-2025 14:57:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php on line 9
+[08-Aug-2025 15:06:54 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php on line 9
+[08-Aug-2025 15:07:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php on line 8
+[08-Aug-2025 16:42:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php on line 10
+[08-Aug-2025 17:01:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php on line 9
+[08-Aug-2025 17:58:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php on line 9
+[08-Aug-2025 18:56:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php on line 9
+[08-Aug-2025 19:21:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php on line 9
+[08-Aug-2025 19:53:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php on line 9
+[08-Aug-2025 21:01:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/RightDrawer.php on line 9
+[08-Aug-2025 21:41:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/button.php on line 9
+[08-Aug-2025 22:26:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/CronMessage.php on line 10
+[08-Aug-2025 22:44:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php on line 8
+[08-Aug-2025 23:43:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php on line 9
+[09-Aug-2025 00:32:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php on line 8
+[09-Aug-2025 02:37:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AppLayout.php on line 8
+[09-Aug-2025 02:45:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/helpText.php on line 9
+[09-Aug-2025 02:45:22 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Alert.php on line 9
+[09-Aug-2025 04:15:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/SidebarDropdownMenu.php on line 9
+[09-Aug-2025 08:41:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/upgradeBox.php on line 9
+[09-Aug-2025 11:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/Radio.php on line 9
+[09-Aug-2025 11:17:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php on line 9
+[09-Aug-2025 15:41:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/buttonCancel.php on line 9
+[09-Aug-2025 16:48:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/GuestLayout.php on line 8
+[09-Aug-2025 21:12:15 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php on line 10
+[10-Aug-2025 07:11:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/View/Components/AuthLayout.php on line 10

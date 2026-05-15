@@ -1,0 +1,4 @@
+[02-Aug-2025 14:02:05 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Queueable" not found in /home/emlhdnzr/pos.emlhor.com/app/Jobs/ImportCustomerDataJob.php on line 14
+[07-Aug-2025 04:31:41 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Queueable" not found in /home/emlhdnzr/pos.emlhor.com/app/Jobs/ImportCustomerDataJob.php on line 14
+[07-Aug-2025 19:37:52 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Queueable" not found in /home/emlhdnzr/pos.emlhor.com/app/Jobs/ImportCustomerDataJob.php on line 14
+[09-Aug-2025 08:38:01 UTC] PHP Fatal error:  Trait "Illuminate\Bus\Queueable" not found in /home/emlhdnzr/pos.emlhor.com/app/Jobs/ImportCustomerDataJob.php on line 14

@@ -1,0 +1,16 @@
+[06-Aug-2025 11:18:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/emlhdnzr/pos.emlhor.com/database/factories/UserFactory.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/database/factories/UserFactory.php on line 15
+[08-Aug-2025 06:44:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/emlhdnzr/pos.emlhor.com/database/factories/UserFactory.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/database/factories/UserFactory.php on line 15
+[08-Aug-2025 18:11:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/emlhdnzr/pos.emlhor.com/database/factories/UserFactory.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/database/factories/UserFactory.php on line 15
+[09-Aug-2025 15:23:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/emlhdnzr/pos.emlhor.com/database/factories/UserFactory.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/database/factories/UserFactory.php on line 15

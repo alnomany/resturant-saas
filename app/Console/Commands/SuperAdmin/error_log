@@ -1,0 +1,24 @@
+[05-Aug-2025 09:22:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/FreeLicenseRenew.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/FreeLicenseRenew.php on line 8
+[06-Aug-2025 08:11:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/LicenseExpire.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/LicenseExpire.php on line 13
+[09-Aug-2025 18:11:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/LicenseExpire.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/LicenseExpire.php on line 13
+[10-Aug-2025 01:24:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/FreeLicenseRenew.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/FreeLicenseRenew.php on line 8
+[10-Aug-2025 03:53:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/TrialExpire.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/TrialExpire.php on line 14
+[10-Aug-2025 07:28:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Console\Command" not found in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/TrialExpire.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Console/Commands/SuperAdmin/TrialExpire.php on line 14

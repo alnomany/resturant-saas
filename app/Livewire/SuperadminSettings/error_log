@@ -1,0 +1,24 @@
+[03-Aug-2025 03:57:24 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/Master.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/Master.php on line 9
+[03-Aug-2025 04:00:32 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/AppSettings.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/AppSettings.php on line 13
+[09-Aug-2025 15:38:00 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/AppSettings.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/AppSettings.php on line 13
+[09-Aug-2025 18:52:33 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/AppSettings.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/AppSettings.php on line 13
+[10-Aug-2025 05:52:17 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/Master.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/Master.php on line 9
+[10-Aug-2025 07:12:22 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/Master.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Livewire/SuperadminSettings/Master.php on line 9

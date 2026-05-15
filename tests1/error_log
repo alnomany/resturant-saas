@@ -1,0 +1,12 @@
+[01-Aug-2025 17:37:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/emlhdnzr/pos.emlhor.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/tests/TestCase.php on line 7
+[07-Aug-2025 03:17:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/emlhdnzr/pos.emlhor.com/tests1/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/tests1/TestCase.php on line 7
+[08-Aug-2025 04:58:41 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/emlhdnzr/pos.emlhor.com/tests1/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/tests1/TestCase.php on line 7

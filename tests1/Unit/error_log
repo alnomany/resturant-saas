@@ -1,0 +1,12 @@
+[01-Aug-2025 14:37:46 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/emlhdnzr/pos.emlhor.com/tests/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/tests/Unit/ExampleTest.php on line 7
+[07-Aug-2025 04:34:12 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/emlhdnzr/pos.emlhor.com/tests1/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/tests1/Unit/ExampleTest.php on line 7
+[08-Aug-2025 06:19:44 UTC] PHP Fatal error:  Uncaught Error: Class "PHPUnit\Framework\TestCase" not found in /home/emlhdnzr/pos.emlhor.com/tests1/Unit/ExampleTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/tests1/Unit/ExampleTest.php on line 7

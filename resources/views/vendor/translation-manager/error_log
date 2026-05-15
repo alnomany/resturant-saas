@@ -1,0 +1,16 @@
+[01-Aug-2025 08:25:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/translation-manager/index.php:342
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/translation-manager/index.php on line 342
+[01-Aug-2025 08:36:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/translation-manager/index.php:342
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/translation-manager/index.php on line 342
+[08-Aug-2025 21:52:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/translation-manager/index.php:342
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/translation-manager/index.php on line 342
+[09-Aug-2025 12:22:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function csrf_token() in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/translation-manager/index.php:342
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/translation-manager/index.php on line 342

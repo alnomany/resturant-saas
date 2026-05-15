@@ -1,0 +1,20 @@
+[02-Aug-2025 16:35:40 UTC] PHP Fatal error:  Uncaught Error: Interface "Maatwebsite\Excel\Concerns\ToModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php on line 11
+[07-Aug-2025 03:26:44 UTC] PHP Fatal error:  Uncaught Error: Interface "Maatwebsite\Excel\Concerns\ToModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php on line 11
+[07-Aug-2025 21:34:17 UTC] PHP Fatal error:  Uncaught Error: Interface "Maatwebsite\Excel\Concerns\ToModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php on line 11
+[08-Aug-2025 19:28:25 UTC] PHP Fatal error:  Uncaught Error: Interface "Maatwebsite\Excel\Concerns\ToModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php on line 11
+[09-Aug-2025 17:53:09 UTC] PHP Fatal error:  Uncaught Error: Interface "Maatwebsite\Excel\Concerns\ToModel" not found in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/app/Imports/CustomerImport.php on line 11

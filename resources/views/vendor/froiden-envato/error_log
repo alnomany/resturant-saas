@@ -1,0 +1,4 @@
+[02-Aug-2025 07:33:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function storage_path() in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/froiden-envato/install_message.blade.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/emlhdnzr/pos.emlhor.com/resources/views/vendor/froiden-envato/install_message.blade.php on line 10
