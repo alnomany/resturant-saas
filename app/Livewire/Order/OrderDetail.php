@@ -68,6 +68,7 @@ class OrderDetail extends Component
         session()->forget('loyalty.points_used');
         session()->forget('loyalty.points_discount_x');
         $this->total = 0;
+        $this->order =
         $this->subTotal = 0;
         $this->redeemPoints = $this->order->customer->loyalty_points ?? 0;
         $this->taxes = Tax::all();
