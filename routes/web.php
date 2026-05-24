@@ -55,7 +55,25 @@ Route::get('/manifest.json', [HomeController::class, 'manifest'])->name('manifes
 Route::get('/test', function () {
     return 'Print Test';
 });
+Route::get('/clear-session-secure', function() {
+    // 1. تسجيل خروج من لارافيل
+    auth()->logout();
+    
+    // 2. تصفير الـ Session تماماً
+    session()->flush();
+    session()->invalidate();
+    session()->regenerateToken();
+    
+    // 3. حذف ملفات الـ Session المخزنة في مجلد التخزين بالكامل
+    $files = glob(storage_path('framework/sessions/*'));
+    foreach($files as $file){
+        if(is_file($file)) {
+            @unlink($file); // حذف ملف الجلسة الكاش
+        }
+    }
 
+    return "✅ تم تنظيف الجلسات وكاش السيرفر بنجاح! اذهب الآن لصفحة الطلب وجرب.";
+});
 Route::middleware([LocaleMiddleware::class])->group(function () {
 
     Route::get('/', [HomeController::class, 'landing'])->name('home');
