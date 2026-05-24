@@ -24,7 +24,7 @@ class HomeController extends Controller
 
     public function landing()
     {
-        $this->showInstall();
+        return $this->showInstall();
 
         $global = global_setting();
 
