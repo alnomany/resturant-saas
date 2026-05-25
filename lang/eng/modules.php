@@ -13,7 +13,7 @@ return [
         'editMenuItem' => 'Edit Menu Item',
         'itemCategory' => 'Item Category',
         'addItemCategory' => 'Add Item Category',
-        'typeVeg' => 'Veg',
+        'typeVeg' => 'طلب فوري وجاهز',
         'addItem' => 'Add Item',
         'typeNonVeg' => 'Non Veg',
         'typeEgg' => 'Egg',
