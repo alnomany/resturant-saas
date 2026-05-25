@@ -255,11 +255,13 @@ if ($this->order) {
 
 
 
-                // تحديث رصيد العميل
+                // تحديث رصيد العميل d sdffs
                 $customer = Customer::find($this->order->customer->id);
 
+                if ($customer && $customer->exists) {
                 $customer->loyalty_points += $pointsEarned;
                 $customer->save();
+                }
             }
         }
         /*
