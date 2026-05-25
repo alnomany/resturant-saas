@@ -258,8 +258,10 @@ if ($this->order) {
                 // تحديث رصيد العميل
                 $customer = Customer::find($this->order->customer->id);
 
+                if ($customer && $customer->exists) {
                 $customer->loyalty_points += $pointsEarned;
                 $customer->save();
+                }
             }
         }
         /*
