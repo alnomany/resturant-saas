@@ -1,3 +1,4 @@
+dd($orderDetail->customer_id)
 <div class="flex flex-col h-auto min-h-screen px-2 py-4 pr-4 bg-white border-l lg:w-5/12 dark:border-gray-700 dark:bg-gray-800">
     <div>
         <h2 class="text-lg dark:text-neutral-200">@lang('modules.order.orderNumber') #{{ $orderDetail->order_number }}</h2>

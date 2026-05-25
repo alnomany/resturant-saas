@@ -60,9 +60,16 @@ class OrderDetail extends Component
     public $pointsDiscount = 0;
     public $pointsFinalAmount = 0;
     public $currentCustomerId;
+    public $customername;
 
     public function mount($data = null)
     {
+        //ahmed
+                $customer = customer();
+
+                        $this->customer = $customer;
+                        $this->customername =$customer;
+
         session()->forget('loyalty.points_discount');
         session()->forget('loyalty.points_finalamount');
         session()->forget('loyalty.points_used');

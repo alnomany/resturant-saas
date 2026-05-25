@@ -17,10 +17,10 @@ class Customer extends BaseModel
 
     protected $guarded = ['id'];
 
-    public function orders(): HasMany
-    {
-        return $this->hasMany(Order::class)->orderBy('id', 'desc');
-    }
+   public function orders(): HasMany 
+{
+    return $this->hasMany(Order::class, 'customer_id', 'id')->orderBy('id', 'desc');
+}
 
     public function addresses(): HasMany
     {

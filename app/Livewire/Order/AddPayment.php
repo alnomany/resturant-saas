@@ -52,7 +52,11 @@ class AddPayment extends Component
 
     public function mount($data = null)
     {
-
+if ($this->order) {
+    $this->order->load('customer'); // هذا السطر سيجبر لارافيل على جلب بيانات العميل
+    dd($this->order->customer);
+    $this->deliveryExecutive = $this->order->delivery_executive_id;
+}
         ///////////////////////
         // 1. نتحقق أولاً: هل ضغط المستخدم على زر تطبيق النقاط في المكون الآخر؟
         if (session()->get('loyalty.is_applied') === true) {
@@ -525,13 +529,21 @@ class AddPayment extends Component
             'available_status' => 'available'
         ]);
 
+     
         if ($this->order->customer_id) {
-            try {
-                $this->order->customer->notify(new SendOrderBill($this->order));
-            } catch (\Exception $e) {
-                \Log::error('Error sending notification: ' . $e->getMessage());
-            }
+    try {
+        // إجبار الموديل على تحميل بيانات العميل من قاعدة البيانات فوراً
+        $this->order->load('customer'); 
+
+        if ($this->order->customer) {
+            $this->order->customer->notify(new SendOrderBill($this->order));
+        } else {
+            \Log::warning("مستند الطلب يحتوي على customer_id = {$this->order->customer_id} ولكن هذا العميل غير موجود في جدول العملاء (ربما تم حذفه).");
         }
+    } catch (\Exception $e) {
+        \Log::error('Error sending notification: ' . $e->getMessage());
+    }
+}
 
         $this->dispatch('showOrderDetail', id: $this->order->id);
         $this->dispatch('refreshOrders');
