@@ -80,6 +80,7 @@
                                         </div>
                                         <h2 class="mt-4 text-2xl font-bold text-gray-800 dark:text-white">نادي النقاط</h2>
                                     <div class="font-semibold text-gray-700 dark:text-gray-300">      {{ $order->customer->name ?? '--' }} </div>
+
                                         <div class="text-xs font-medium text-gray-600 dark:text-gray-400">
                                             {{ $order->date_time->timezone(timezone())->translatedFormat('F d, Y H:i A') }}
                                         </div>

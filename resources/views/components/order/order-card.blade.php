@@ -39,6 +39,8 @@
                 <div>
                     <div
                         class="font-semibold text-gray-700 truncate max-w-32 text-sm dark:text-gray-300">{{ $order->customer->name ?? '--' }}</div>
+                         <div
+                        class="font-semibold text-gray-700 truncate max-w-32 text-sm dark:text-gray-300">{{ $order->customer->phone ?? '--' }}</div>
                     <div class="font-medium text-gray-600 text-sm dark:text-gray-400">@lang('modules.order.orderNumber')
                         #{{ $order->order_number }}</div>
                 </div>

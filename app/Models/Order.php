@@ -44,11 +44,23 @@ class Order extends BaseModel
         return $this->belongsTo(Table::class);
     }
 
-    public function customer(): BelongsTo
-    {
-        return $this->belongsTo(Customer::class);
-    }
-
+/*
+public function customer(): BelongsTo
+{
+    return $this->belongsTo(Customer::class, 'customer_id', 'id');
+}
+    */
+//ahmed added to fixed multi tenant 
+public function customer(): BelongsTo
+{
+    return $this->belongsTo(Customer::class, 'customer_id')
+                ->withoutGlobalScopes() // تخطي حماية المطاعم لجلب اسم العميل فقط في هذا الطلب
+                ->withDefault([
+                    'name' => 'عميل عام / زائر', // الاسم الذي سيظهر في السلة أو الفاتورة
+                    'phone' => '-',
+                    'email'=>'customer@gmail.com'
+                ]);
+}
     public function waiter(): BelongsTo
     {
         return $this->belongsTo(User::class)->withoutGlobalScope(BranchScope::class);
