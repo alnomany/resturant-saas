@@ -255,7 +255,7 @@ if ($this->order) {
 
 
 
-                // تحديث رصيد العميل dfs
+                // تحديث رصيد العميل d sdffs
                 $customer = Customer::find($this->order->customer->id);
 
                 if ($customer && $customer->exists) {
