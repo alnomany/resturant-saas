@@ -97,17 +97,24 @@
         @livewire('shopDesktopNavigation', ['restaurant' => $restaurant, 'shopBranch' => $shopBranch])
      <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                    <div class="swiper-slide">                           
-<video id="video" class="video" preload="metadata" playsinline="" autoplay="" muted="" loop="" poster="{{ asset('images/hero2.jpg') }}">
-<source src="{{ asset('images/pizza.mp4') }}" type="video/mp4"></video>
+                    <div class="swiper-slide"> 
+                                            @if($restaurant->id == 5)
+                          
+<video id="video" class="video" preload="metadata" playsinline="" autoplay="" muted="" loop="" poster="{{ asset('images/cake.jpg') }}">
+<source src="{{ asset('images/cacke.mp4') }}" type="video/mp4"></video>
+@endif
 
                     </div>
+                    @if($restaurant->id != 5)
+                    <video id="video" class="video" preload="metadata" playsinline="" autoplay="" muted="" loop="" poster="{{ asset('images/hero2.jpg') }}">
+<source src="{{ asset('images/pizza.mp4') }}" type="video/mp4"></video>
                     <div class="swiper-slide">
                         <img src="{{ asset('images/hero1.png') }}" alt="Photo" >
                     </div>
                     <div class="swiper-slide">
                            <img src="{{ asset('images/hero2.jpg') }}" alt="Photo2" > 
                     </div>
+                    @endif
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
