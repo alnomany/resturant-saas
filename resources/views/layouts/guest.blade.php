@@ -42,6 +42,9 @@
     <meta name="keyword" content="{{ $restaurant->meta_keyword ?? '' }}">
     <meta name="description" content="{{ $restaurant->meta_description ?? $restaurant->name }}">
     <title>{{ $restaurant->name }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -86,6 +89,14 @@
       height: 60vh;
       object-fit: cover;
     }
+    
+*{
+  font-family: "Noto Sans Arabic", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 </style>
 </head>
 

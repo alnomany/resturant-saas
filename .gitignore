@@ -40,5 +40,4 @@ database/maxmind/
 public/css/app-custom.css
 public/css/theme-custom.css
 
-lang/*
-!lang/eng/
+
