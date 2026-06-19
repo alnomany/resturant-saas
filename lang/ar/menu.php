@@ -32,7 +32,7 @@ return array(
     'about' => 'من نحن',
     'contact' => 'اتصل بنا',
     'staff' => 'طاقم العمل / الموظفين',
-    'bookTable' => 'حجز طاولة',
+    'bookTable' => 'أحجز ',
     'myBookings' => 'حجوزاتي',
     'reservations' => 'الحجوزات',
     'customerSite' => 'موقع العميل',
