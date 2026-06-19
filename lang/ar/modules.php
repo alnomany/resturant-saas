@@ -803,6 +803,8 @@ return [
         'paystack' => 'Paystack',
     ],
     'reservation' => [
+            "Table Reservation" => "أحجز",
+
         'slotType' => 'نوع الفترة',
         'timeStart' => 'وقت البدء',
         'timeEnd' => 'وقت الانتهاء',

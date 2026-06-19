@@ -18,7 +18,7 @@ return [
     "Expense" => "المصروف",
     "Change Branch" => "تغيير الفرع",
     "Export Report" => "تصدير التقرير",
-    "Table Reservation" => "حجز الطاولة",
+    "Table Reservation" => "أحجز",
     "Payment Gateway Integration" => "تكامل بوابة الدفع",
     "Theme Setting" => "إعدادات المظهر",
 ];
