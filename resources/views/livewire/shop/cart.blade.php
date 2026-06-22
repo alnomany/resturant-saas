@@ -231,11 +231,11 @@
                             <!-- تفاصيل المنتج -->
                             <div class="p-6 flex flex-col flex-grow">
                                 <div class="flex justify-between items-start mb-2">
-                                    <h4 class="text-xl font-bold text-gray-900 dark:text-white leading-tight group-hover:text-amber-600 transition-colors">
+                                    <h4 class="text-xl font-bold text-gray-900 dark:text-white leading-tight group-hover:text-[#ff91af] transition-colors">
                                         {{ $item->getTranslatedValue('item_name', session('locale')) }}
                                     </h4>
                                     @if ($item->variations_count == 0)
-                                        <span class="text-amber-600 font-black text-lg whitespace-nowrap">
+                                        <span class="font-black text-lg whitespace-nowrap" style="color: #ff91af;">
                                             {{ currency_format($item->price, $restaurant->currency_id) }}
                                         </span>
                                     @endif
