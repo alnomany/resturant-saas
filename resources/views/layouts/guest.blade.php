@@ -112,7 +112,7 @@
                                             @if($restaurant->id == 5)
                           
 <video id="video" class="video" preload="metadata" playsinline="" autoplay="" muted="" loop="" poster="{{ asset('images/cake.jpg') }}">
-<source src="{{ asset('images/cacke.mp4') }}" type="video/mp4"></video>
+<source src="{{ asset('images/cacke2.mp4') }}" type="video/mp4"></video>
 @endif
 
                     </div>
