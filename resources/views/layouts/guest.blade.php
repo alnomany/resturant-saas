@@ -397,6 +397,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     @include('sections.pusher-script')
 
     @stack('scripts')
+    <script>
     document.addEventListener('livewire:init', () => {
 
     Livewire.on('gtm-add-to-cart', (event) => {
@@ -421,6 +422,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 
 });
+</script>
 </body>
 
 </html>
