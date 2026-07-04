@@ -397,6 +397,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     @include('sections.pusher-script')
 
     @stack('scripts')
+    document.addEventListener('livewire:init', () => {
+
+    Livewire.on('gtm-add-to-cart', (event) => {
+
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+            event: 'add_to_cart',
+            ecommerce: {
+                currency: 'SAR',
+                value: event.price,
+                items: [{
+                    item_id: event.item_id,
+                    item_name: event.item_name,
+                    price: event.price,
+                    quantity: event.quantity
+                }]
+            }
+        });
+
+        console.log('add_to_cart fired');
+    });
+
+});
 </body>
 
 </html>

@@ -221,6 +221,13 @@ class Cart extends Component
             $this->orderItemAmount[$id] = $this->orderItemQty[$id] * ($basePrice + ($this->orderItemModifiersPrice[$id] ?? 0));
             $this->cartItemQty[$id] = isset($this->cartItemQty[$this->menuItem->id]) ? ($this->cartItemQty[$this->menuItem->id] + 1) : 1;
             $this->calculateTotal();
+                    // إرسال الحدث إلى GTM
+        $this->dispatch('gtm-add-to-cart', [
+            'item_id' => $this->menuItem->id,
+            'item_name' => $this->menuItem->item_name,
+            'price' => $basePrice,
+            'quantity' => 1,
+        ]);
 
         } else {
             $this->addQty($id);
@@ -230,6 +237,7 @@ class Cart extends Component
             $this->itemNotes[$id] = '';
         }
     }
+    
 
     #[On('addQty')]
     public function addQty($id)
@@ -240,6 +248,13 @@ class Cart extends Component
         $basePrice = $this->orderItemVariation[$id]->price ?? $this->orderItemList[$id]->price;
         $this->orderItemAmount[$id] = $this->orderItemQty[$id] * ($basePrice + ($this->orderItemModifiersPrice[$id] ?? 0));
         $this->calculateTotal();
+                // إرسال الحدث إلى GTM
+        $this->dispatch('gtm-add-to-cart', [
+            'item_id' => $this->menuItem->id,
+            'item_name' => $this->menuItem->item_name,
+            'price' => $basePrice,
+            'quantity' => 1,
+        ]);
     }
 
     #[On('subQty')]
