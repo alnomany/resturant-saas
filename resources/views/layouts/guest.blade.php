@@ -454,6 +454,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         console.log('begin_checkout fired');
 
     });
+    Livewire.on('gtm-add-shipping-info', (event) => {
+
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+            event: 'add_shipping_info',
+            ecommerce: event
+        });
+
+        console.log('add_shipping_info fired');
+
+    });
 
 });
 </script>
