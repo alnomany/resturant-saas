@@ -442,6 +442,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         console.log('customer_identified fired');
 
     });
+    Livewire.on('gtm-begin-checkout', (event) => {
+
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+            event: 'begin_checkout',
+            ecommerce: event
+        });
+
+        console.log('begin_checkout fired');
+
+    });
 
 });
 </script>

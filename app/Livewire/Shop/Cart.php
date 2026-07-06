@@ -533,6 +533,8 @@ class Cart extends Component
             }
 
         } else {
+          $this->dispatch('gtm-begin-checkout');
+
             $order = Order::create([
                 'order_number' => $this->orderNumber,
                 'branch_id' => $this->shopBranch->id,
