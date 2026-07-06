@@ -529,7 +529,7 @@ class LocationSelector extends Component
         $this->dispatch('gtm-add-shipping-info', [
             'currency' => 'SAR',
             'value' => $this->cartTotal, // أو $this->total إذا كانت موجودة
-            'items' => $this->cartItemsForGA4(),
+            'items' => $this->total,
         ]);
 
         $this->dispatch('selectedDeliveryDetails', [
