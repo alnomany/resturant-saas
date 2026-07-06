@@ -399,7 +399,7 @@ class Cart extends Component
     {
         $this->showCart = true;
         $this->showMenu = false;
-        $this->dispatch('view-cart');
+        $this->dispatch('gtm-view-cart');
 
     }
 
