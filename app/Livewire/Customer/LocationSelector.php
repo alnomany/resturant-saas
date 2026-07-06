@@ -526,11 +526,10 @@ class LocationSelector extends Component
         $this->selectedLat = $this->customerLat;
         $this->selectedLng = $this->customerLng;
 
-        $this->dispatch('gtm-add-shipping-info', [
-            'currency' => 'SAR',
-            'value' => $this->cartTotal, // أو $this->total إذا كانت موجودة
-            'items' => $this->total,
-        ]);
+     $this->dispatch('gtm-add-shipping-info', [
+    'currency' => 'SAR',
+    'value' => $this->total,
+]);
 
         $this->dispatch('selectedDeliveryDetails', [
             'lat' => $this->selectedLat,
