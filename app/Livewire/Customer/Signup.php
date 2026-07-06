@@ -105,6 +105,8 @@ class Signup extends Component
     public function setCustomerDetail($customer)
     {
         session(['customer' => $customer]);
+        $this->dispatch('gtm-customer-identified');
+
         $this->dispatch('setCustomer', customer: $customer);
 
         $this->showSignupModal = false;
