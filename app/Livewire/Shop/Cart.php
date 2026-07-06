@@ -399,6 +399,8 @@ class Cart extends Component
     {
         $this->showCart = true;
         $this->showMenu = false;
+        $this->dispatch('view-cart');
+
     }
 
     #[On('showMenuItems')]

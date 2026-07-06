@@ -420,6 +420,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         console.log('add_to_cart fired');
     });
+        Livewire.on('gtm-view-cart', (event) => {
+
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+            event: 'view_cart',
+            ecommerce: event
+        });
+
+        console.log('view_cart fired');
+    });
 
 });
 </script>
