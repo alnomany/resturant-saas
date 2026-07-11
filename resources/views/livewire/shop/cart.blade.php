@@ -595,6 +595,96 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="mb-3">
+                            <!--coupon code -->
+                            <div class="rounded-2xl border border-gray-200 bg-white p-5">
+
+                                <div class="flex items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900">
+                                            كوبون الخصم
+                                        </h3>
+
+                                        <p class="text-sm text-gray-500">
+                                            أدخل كود الخصم إذا كان لديك.
+                                        </p>
+                                    </div>
+
+                                    <svg class="w-6 h-6 text-green-500">
+                                        ...
+                                    </svg>
+                                </div>
+
+                                <div class="flex gap-3">
+
+                                    <input
+                                        wire:model.defer="couponCode"
+                                        type="text"
+                                        placeholder="مثال : WELCOME15"
+                                        class="w-full rounded-xl border-gray-300 focus:ring-green-500 focus:border-green-500">
+
+                                    <button
+                                        wire:click="applyCoupon"
+                                        wire:loading.attr="disabled"
+                                        class="px-6 rounded-xl bg-green-600 text-white hover:bg-green-700">
+
+                                        <span wire:loading.remove>
+                                            تطبيق
+                                        </span>
+
+                                        <span wire:loading>
+                                            جاري...
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                                @error('couponCode')
+                                    <p class="mt-2 text-sm text-red-500">
+                                        {{ $message }}
+                                    </p>
+                                @enderror
+
+                                @if($couponSuccess)
+
+                                    <div
+                                        class="mt-4 rounded-xl bg-green-50 border border-green-200 p-4">
+
+                                        <div class="flex justify-between">
+
+                                            <div>
+
+                                                <div class="font-semibold text-green-700">
+                                                    تم تطبيق الكوبون
+                                                </div>
+
+                                                <div class="text-sm text-green-600">
+
+                                                    {{ $coupon->code }}
+
+                                                </div>
+
+                                            </div>
+
+                                            <button
+                                                wire:click="removeCoupon"
+                                                class="text-red-500">
+
+                                                إزالة
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                @endif
+
+                            </div>
+                                                        <!--coupon code -->
+
+                        </div>
 
                         <div class="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                             <div>

@@ -39,6 +39,8 @@ use Illuminate\Support\Facades\Http;
 use App\Scopes\AvailableMenuItemScope;
 use App\Models\PaymentGatewayCredential;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
+ use App\Models\Coupon;
+use Carbon\Carbon;
 
 class Cart extends Component
 {
@@ -112,7 +114,10 @@ class Cart extends Component
     public $etaMin;
     public $etaMax;
     public $itemNotes = [];
-
+    public $couponCode = '';
+    public $coupon = null;
+    public $couponSuccess = false;
+    public $discount = 0;
     public function mount()
     {
         if ($this->tableID) {
@@ -198,6 +203,103 @@ class Cart extends Component
             $this->itemNotes[$id] = '';
         }
     }
+
+
+public function applyCoupon()
+{
+    $this->validate([
+        'couponCode' => 'required|string|max:50',
+    ], [
+        'couponCode.required' => 'يرجى إدخال كود الخصم.',
+    ]);
+
+    $coupon = Coupon::where('restaurant_id', $this->restaurant->id)
+        ->where(function ($query) {
+            $query->whereNull('branch_id')
+                  ->orWhere('branch_id', $this->shopBranch->id);
+        })
+        ->where('code', strtoupper(trim($this->couponCode)))
+        ->first();
+
+    if (!$coupon) {
+        $this->addError('couponCode', 'كود الخصم غير صحيح.');
+        return;
+    }
+
+    if (!$coupon->is_active) {
+        $this->addError('couponCode', 'هذا الكوبون غير مفعل.');
+        return;
+    }
+
+    if ($coupon->starts_at && Carbon::now()->lt($coupon->starts_at)) {
+        $this->addError('couponCode', 'لم يبدأ الكوبون بعد.');
+        return;
+    }
+
+    if ($coupon->expires_at && Carbon::now()->gt($coupon->expires_at)) {
+        $this->addError('couponCode', 'انتهت صلاحية الكوبون.');
+        return;
+    }
+
+    if ($coupon->usage_limit && $coupon->used >= $coupon->usage_limit) {
+        $this->addError('couponCode', 'تم الوصول للحد الأقصى لاستخدام الكوبون.');
+        return;
+    }
+
+    if ($this->subTotal < $coupon->minimum_amount) {
+        $this->addError(
+            'couponCode',
+            'الحد الأدنى للطلب هو ' . number_format($coupon->minimum_amount, 2) . ' ريال.'
+        );
+        return;
+    }
+
+    // حساب الخصم
+    if ($coupon->type === 'percentage') {
+
+        $discount = ($this->subTotal * $coupon->value) / 100;
+
+        if ($coupon->maximum_discount) {
+            $discount = min($discount, $coupon->maximum_discount);
+        }
+
+    } elseif ($coupon->type === 'fixed') {
+
+        $discount = min($coupon->value, $this->subTotal);
+
+    } else {
+
+        $discount = 0;
+
+    }
+
+    $this->coupon = $coupon;
+
+    $this->discount = round($discount, 2);
+
+    $this->total = $this->subTotal - $this->discount;
+
+    session()->put('coupon_id', $coupon->id);
+session()->flash('success', 'تم تطبيق الكوبون بنجاح 🎉');
+$this->couponSuccess = true;
+    $this->resetErrorBag('couponCode');
+}
+public function removeCoupon()
+{
+    $this->coupon = null;
+
+    $this->couponCode = '';
+
+    $this->discount = 0;
+
+    // أعد حساب الإجمالي الأصلي
+    $this->total = $this->calculateTotal();
+
+
+    session()->forget('coupon_id');
+
+    $this->resetErrorBag();
+}
 
     public function subCartItems($id)
     {
@@ -324,6 +426,11 @@ class Cart extends Component
         }
 
         $this->total += (float)$this->deliveryFee ?: 0;
+                // طرح الخصم
+        $this->total -= $this->discount;
+
+        // منع أن يصبح الإجمالي سالباً
+        $this->total = max(0, $this->total);
     }
 
     public function UpdatedOrderType($value)
@@ -647,12 +754,19 @@ class Cart extends Component
         $this->total += (float)$this->deliveryFee ?: 0;
 
         $this->total += $order->tip_amount ?? 0;
+        $this->total -= $this->discount;
+
+        // لا تجعل الإجمالي أقل من صفر
+        $this->total = max(0, $this->total);
 
         Order::where('id', $order->id)->update([
             'sub_total' => $this->subTotal,
-            'total' => $this->total
+            'total' => $this->total,
+            'coupon_id'       => $this->coupon?->id,
+            'discount_type'   => $this->coupon?->type,
+            'discount_amount' => $this->discount,
         ]);
-
+        $order->refresh();
         if (!is_null($this->tableID)) {
             $table->available_status = 'running';
             $table->saveQuietly();
@@ -666,7 +780,21 @@ class Cart extends Component
             Order::where('id', $order->id)->update([
                 'status' => 'kot'
             ]);
+       
 
+            /* dd([
+                'order_id' => $order->id,
+                'coupon_id' => $order->coupon_id, 
+                'total' =>  $coupon,
+            ]); */
+            //ahmed added 
+        // With this safe code:
+        if ($order->coupon_id) {
+            $coupon = Coupon::find($order->coupon_id);
+            if ($coupon) {
+                $coupon->increment('used');
+            }
+        }
             $this->sendNotifications($order);
 
             $this->alert('success', __('messages.orderSaved'), [
