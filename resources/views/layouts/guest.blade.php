@@ -117,14 +117,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         @livewire('shopDesktopNavigation', ['restaurant' => $restaurant, 'shopBranch' => $shopBranch])
      <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
+                     @if($restaurant->id == 5)
+    <div class="swiper-slide">
+                           <img src="{{ asset('images/hereo44.png') }}" alt="Photo2" > 
+                    </div>
                     <div class="swiper-slide"> 
-                                            @if($restaurant->id == 5)
                           
 <video id="video" class="video" preload="metadata" playsinline="" autoplay="" muted="" loop="" poster="{{ asset('images/cake.jpg') }}">
 <source src="{{ asset('images/cacke2.mp4') }}" type="video/mp4"></video>
-@endif
+
 
                     </div>
+                    @endif
                     @if($restaurant->id != 5)
                     <video id="video" class="video" preload="metadata" playsinline="" autoplay="" muted="" loop="" poster="{{ asset('images/hero2.jpg') }}">
 <source src="{{ asset('images/pizza.mp4') }}" type="video/mp4"></video>
