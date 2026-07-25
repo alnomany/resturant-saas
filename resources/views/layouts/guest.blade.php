@@ -221,7 +221,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </footer>
 
+   {{-- أيقونة واتساب --}}
 
+
+<livewire:whatsapp-button.whatsapp-button :restaurantId="$restaurant->id" />    
     @livewireScripts
 
 
