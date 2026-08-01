@@ -204,7 +204,14 @@
                             "group relative flex flex-col bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-800 h-full",
                             "opacity-75 grayscale-[0.3]" => !$item->in_stock,
                         ]) wire:key='menu-item-{{ $item->id . microtime() }}'>
-                            
+@if (!empty($item->badge_text))
+    <div class="absolute top-4 right-4 z-20 flex items-center gap-1.5 bg-red-600 text-white text-[11px] font-black px-3 py-1.5 rounded-full shadow-lg shadow-red-600/50 animate-pulse border border-red-500">
+        <svg class="w-3.5 h-3.5 flex-shrink-0 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+        </svg>
+        <span class="text-white drop-shadow-sm">{{ $item->badge_text }}</span>
+    </div>
+@endif
                             <!-- قسم الصورة (كبيرة وواضحة) -->
                             <div class="relative aspect-[16/10] overflow-hidden cursor-pointer" wire:click="showItemDetail({{ $item->id }})">
                                 <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" 

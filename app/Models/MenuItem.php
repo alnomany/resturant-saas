@@ -51,8 +51,14 @@ class MenuItem extends BaseModel
 
     protected $casts = [
         'show_on_customer_site' => 'boolean',
+        'is_on_sale' => 'boolean' // <--- إضافة
     ];
 
+    // دالة جلب نص البادج مترجماً حسب اللغة الحالية للموقع
+public function getBadgeTextAttribute(): string
+{
+    return $this->is_on_sale ? __('messages.on_sale') : '';
+}
     protected $appends = [
         'item_photo_url',
     ];

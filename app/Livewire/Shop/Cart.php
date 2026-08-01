@@ -245,7 +245,27 @@ public function applyCoupon()
         $this->addError('couponCode', 'تم الوصول للحد الأقصى لاستخدام الكوبون.');
         return;
     }
+ // =========================================================
+    //  التحقق من وجود منتجات غير مشمولة بالعروض داخل السلة
+    // =========================================================
 
+$itemIds = collect($this->cartItemQty ?? [])
+        ->filter(fn($qty) => $qty > 0)
+        ->keys()
+        ->toArray();
+    // 2. فحص المنتجات في قاعدة البيانات التي ليس عليها عرض خاص (badge_text فارغ)
+    $eligibleItemsCount = \App\Models\MenuItem::whereIn('id', $itemIds)
+        ->where(function ($query) {
+            $query->whereNull('badge_text')
+                  ->orWhere('badge_text', '');
+        })
+        ->count();
+
+    // 3. إذا كان عدد المنتجات التي بدون عرض يساوي 0 (أي أن كل المنتجات بالسلة عليها عروض)
+    if ($eligibleItemsCount === 0) {
+        $this->addError('couponCode', 'الكوبون ينطبق فقط على المنتجات التي لا تحتوي على عروض خاصة.');
+        return;
+    }
     if ($this->subTotal < $coupon->minimum_amount) {
         $this->addError(
             'couponCode',
