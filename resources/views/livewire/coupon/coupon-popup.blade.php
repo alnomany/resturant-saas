@@ -12,6 +12,7 @@ x-init="
         }, 1000);
     }
 ">
+@if($coupon)
 
     {{-- زر فتح الـ Pop-up --}}
     <button @click="$wire.open()" style="  top: 85px;
@@ -37,7 +38,6 @@ x-init="
             <button @click="$wire.close()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
                 ✕
             </button>
-
             {{-- العنوان --}}
             <div class="text-center mb-4">
                 <span class="text-3xl">🔥</span>
@@ -80,6 +80,7 @@ x-init="
             </button>
         </div>
     </div>
+@endif
 
     {{-- JavaScript للنسخ --}}
     <script>
