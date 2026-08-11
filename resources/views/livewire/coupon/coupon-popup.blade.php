@@ -14,7 +14,13 @@ x-init="
 ">
 
     {{-- زر فتح الـ Pop-up --}}
-    <button @click="$wire.open()" 
+    <button @click="$wire.open()" style="  top: 85px;
+        left: 12px;
+
+        padding: 8px 14px;
+        font-size: 13px;
+
+        border-radius: 20px;" 
             class="fixed bottom-4 left-4 bg-red-500 text-white px-4 py-2 rounded-full shadow-lg animate-bounce z-40">
         🔥 عرض خاص
     </button>
