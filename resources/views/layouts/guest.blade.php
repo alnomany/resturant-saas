@@ -92,7 +92,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .swiper-slide img ,video{
       display: block;
       width: 100%;
-      height: 60vh;
+      height: 40vh;
       object-fit: cover;
     }
     

@@ -326,7 +326,13 @@
         @if ($cartQty > 0)
             <div class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[92%] max-w-lg z-50">
                 <button wire:click="showCartItems" 
-                        class="w-full flex items-center justify-between p-5 bg-gray-900 dark:bg-amber-600 text-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] backdrop-blur-md active:scale-95 transition-all">
+                        class="w-full flex items-center justify-between gap-2
+       p-3 md:p-5
+       bg-gray-900 dark:bg-amber-600
+       text-white rounded-2xl md:rounded-3xl
+       shadow-[0_20px_50px_rgba(0,0,0,0.3)]
+       backdrop-blur-md
+       active:scale-95 transition-all">
                     <div class="flex items-center gap-4">
                         <div class="bg-white/20 p-2 rounded-xl">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
