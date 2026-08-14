@@ -2,7 +2,7 @@
     <x-dialog-modal wire:model.live="showSignupModal"  maxWidth="md">
         <x-slot name="title">
             <h2 class="text-lg">
-                @lang($showSignUpProcess ? 'auth.signup' : 'app.login')
+                @lang($showSignUpProcess ? 'app.signup' : 'app.login')
             </h2>
         </x-slot>
 

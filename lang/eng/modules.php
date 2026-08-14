@@ -226,7 +226,7 @@ return [
         'orderItems' => 'Order Items',
         'priceDetails' => 'Price Details',
         'paymentInformation' => 'Payment Information',
-        'paymentPending' => 'Payment Pending',
+        'paymentPending' => 'Payment On Delivery',
         'addTip' => 'Add Tip',
         'tipAdded' => 'Tip Added',
         'tip' => 'Tip',

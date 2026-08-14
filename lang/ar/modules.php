@@ -225,7 +225,7 @@ return [
         'orderItems' => 'أصناف الطلب',
         'priceDetails' => 'تفاصيل السعر',
         'paymentInformation' => 'معلومات الدفع',
-        'paymentPending' => 'الدفع معلق',
+        'paymentPending' => 'الدفع عند الاستلام',
         'addTip' => 'إضافة إكرامية (بقشيش)',
         'tipAdded' => 'تمت إضافة الإكرامية',
         'tip' => 'الإكرامية',

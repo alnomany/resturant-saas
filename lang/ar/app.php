@@ -178,6 +178,7 @@ return array(
     'createdAt' => 'أنشئ في',
     'printedAt' => 'طُبع في',
     'actions' => 'العمليات',
+    'signup'=>'اكمال معلومات التسجيل',
     'viewDetails' => 'عرض التفاصيل',
     'searchPrintJobs' => 'بحث عن مهام الطباعة...',
     'allStatuses' => 'جميع الحالات',
