@@ -78,6 +78,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .swiper {
       width: 100%;
       height: 100%;
+    position: relative !important;
+    z-index: 0 !important;
+        isolation: isolate;
+
+    
+
     }
 
     .swiper-slide {
@@ -87,6 +93,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: flex;
       justify-content: center;
       align-items: center;
+        position: relative !important;
+    z-index: 0 !important;
     }
 
     .swiper-slide img ,video{
