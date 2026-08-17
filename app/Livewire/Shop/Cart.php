@@ -673,7 +673,6 @@ public function removeCoupon()
                 'order_type' => $this->orderType,
                    // استخدم العنوان الذي اختاره العميل الآن
                 'delivery_address' => $this->deliveryAddress ?? $this->customerAddress,
-                'delivery_address' => $this->customerAddress,
                 'status' => 'draft',
                 'order_status' => $this->restaurant->auto_confirm_orders ? 'confirmed' : 'placed',
                 'customer_lat' => $this->addressLat ?? null,
