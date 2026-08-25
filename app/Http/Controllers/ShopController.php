@@ -156,6 +156,25 @@ class ShopController extends Controller
     /**
      * Show about page
      */
+        public function terms(string $hash)
+    {
+        $restaurant = Restaurant::with('currency')->where('hash', $hash)->firstOrFail();
+        $shopBranch = $this->getShopBranch($restaurant);
+
+        $this->redirectIfSubdomainIsEnabled($restaurant);
+
+        return view('shop.terms', compact('restaurant', 'shopBranch'));
+    }
+            public function returnscondition(string $hash)
+    {
+        $restaurant = Restaurant::with('currency')->where('hash', $hash)->firstOrFail();
+        $shopBranch = $this->getShopBranch($restaurant);
+
+        $this->redirectIfSubdomainIsEnabled($restaurant);
+
+        return view('shop.returns-condition', compact('restaurant', 'shopBranch'));
+    }
+    
     public function about(string $hash)
     {
         $restaurant = Restaurant::with('currency')->where('hash', $hash)->firstOrFail();

@@ -91,6 +91,10 @@ Route::middleware([LocaleMiddleware::class])->group(function () {
         Route::get('/book-a-table/{hash}', [ShopController::class, 'bookTable'])->name('book_a_table');
         Route::get('/contact/{hash}', [ShopController::class, 'contact'])->name('contact');
         Route::get('/about-us/{hash}', [ShopController::class, 'about'])->name('about');
+        Route::get('/terms/{hash}', [ShopController::class, 'terms'])->name('terms');
+        Route::get('/returns-condition/{hash}', [ShopController::class, 'returnscondition'])->name('returnscondition');
+
+
         Route::get('/profile/{hash}', [ShopController::class, 'profile'])->name('profile');
         Route::get('/orders-success/{id}', [ShopController::class, 'orderSuccess'])->name('order_success');
     });
