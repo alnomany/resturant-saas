@@ -12,7 +12,30 @@ class orderCard extends Component
     public $order;
     public $branch;
     public $distance;
+    
+public function mount($order)
+{
+    $this->order = $order;
+    
+    // 1. جلب الفرع المرتبط بالطلب أو الفرع الحالي
+    $this->branch = $order->branch ?? branch();
 
+    // 2. إحداثيات الفرع والعميل
+    $branchLat = $this->branch?->lat;
+    $branchLong = $this->branch?->long;
+
+    // افترضنا أن عنوان التوصيل يحتوي على الإحداثيات
+    $customerLat = $order->address?->lat ?? $order->lat;
+    $customerLong = $order->address?->long ?? $order->long;
+
+    // 3. حساب المسافة
+    if ($branchLat && $branchLong && $customerLat && $customerLong) {
+        $calculatedDistance = $this->calculateDistance($branchLat, $branchLong, $customerLat, $customerLong);
+        $this->distance = round($calculatedDistance, 2); // تقريب لرقامين بعد الفاصلة
+    } else {
+        $this->distance = null;
+    }
+}
     /**
      * Create a new component instance.
      */
