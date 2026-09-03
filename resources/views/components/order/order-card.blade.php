@@ -38,11 +38,21 @@
 
                 <div>
                     <div
-                        class="font-semibold text-gray-700 truncate max-w-32 text-sm dark:text-gray-300">{{ $order->customer->name ?? '--' }}</div>
+                        class="font-semibold text-gray-700 truncate max-w-32 text-sm dark:text-gray-300">                            ({{ number_format($branch->deliverySetting->unit === 'miles' ? $distance / 1.60934 : $distance, 2) }} {{ $branch->deliverySetting->unit === 'miles' ? 'miles' : 'km' }})
+/ {{ $order->customer->name ?? '--' }}</div>
+@if($branch)
+    <div class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+        <span>الفرع: {{ $branch->name }}</span>
+        
+        @if($distance)
+            <span class="ms-2 font-semibold text-blue-600">({{ $distance }} كم)</span>
+        @endif
+    </div>
+@endif
                          <div
                         class="font-semibold text-gray-700 truncate max-w-32 text-sm dark:text-gray-300">{{ $order->customer->phone ?? '--' }}</div>
                     <div class="font-medium text-gray-600 text-sm dark:text-gray-400">@lang('modules.order.orderNumber')
-                        #{{ $order->order_number }}</div>
+                        #{{ $order->order_number }} /  {{ $order->delivery_address }}</div>
                 </div>
             </div>
             <div class="ltr:text-right rtl:text-left">
