@@ -95,6 +95,7 @@ public function customer(): BelongsTo
     {
         return $this->hasMany(Payment::class);
     }
+    
 
     public function branch(): BelongsTo
     {

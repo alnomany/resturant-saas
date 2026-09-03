@@ -34,11 +34,18 @@
                 <div>
                     {{-- اسم العميل ومسافة الفرع إن وجدت --}}
                     <div class="font-semibold text-gray-700 truncate max-w-32 text-sm dark:text-gray-300">
-                        @if(isset($branch) && isset($branch->deliverySetting) && isset($distance))
-                            ({{ number_format(($branch->deliverySetting->unit ?? 'km') === 'miles' ? $distance / 1.60934 : $distance, 2) }} {{ ($branch->deliverySetting->unit ?? 'km') === 'miles' ? 'miles' : 'km' }}) /
-                        @elseif(isset($distance))
-                            ({{ $distance }} كم) /
-                        @endif
+                    @if(isset($distance) && !is_null($distance))
+    @php
+        // جلب وحدة القياس الافتراضية (km) إن لم تكن معرفة في إعدادات الفرع
+        $unit = $branch?->deliverySetting?->unit ?? 'km';
+        // تحويل المسافة إلى ميل إن كانت الوحدة miles
+        $formattedDistance = $unit === 'miles' ? $distance / 1.60934 : $distance;
+        // مسمى الوحدة للعرض
+        $unitLabel = $unit === 'miles' ? 'miles' : 'كم';
+    @endphp
+
+    ({{ number_format($formattedDistance, 2) }} {{ $unitLabel }}) /
+@endif
                         {{ $order->customer->name ?? '--' }}
                     </div>
 
