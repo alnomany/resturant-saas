@@ -57,9 +57,13 @@ class orderCard extends Component
     /**
      * Get the view / contents that represent the component.
      */
-    public function render(): View|Closure|string
+public function render(): View|Closure|string
     {
-        return view('components.order.order-card');
+        return view('components.order.order-card', [
+            'order' => $this->order,
+            'branch' => $this->branch,
+            'distance' => $this->distance,
+        ]);
     }
 
 }
