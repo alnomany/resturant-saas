@@ -43,11 +43,11 @@
                     </div>
 
                     {{-- عرض اسم الفرع إذا كان متوفراً --}}
-                    @if(isset($branch) && $branch)
-                        <div class="text-xs text-gray-500 dark:text-gray-400">
-                            الفرع: {{ $branch->name }}
-                        </div>
-                    @endif
+              @if($order->branch || isset($branch))
+    <div class="text-xs text-gray-500 dark:text-gray-400">
+        الفرع: {{ $order->branch?->name ?? $branch?->name ?? '--' }}
+    </div>
+@endif
 
                     <div class="font-semibold text-gray-700 truncate max-w-32 text-sm dark:text-gray-300">
                         {{ $order->customer->phone ?? '--' }}
