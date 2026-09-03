@@ -37,8 +37,7 @@ class orderCard extends Component
 
         return $this->haversineDistance($branchLat, $branchLng, $addressLat, $addressLng);
     }
-    * حساب المسافة بالكيلومتر باستخدام معادلة Haversine
-     */
+   
     private function haversineDistance($lat1, $lon1, $lat2, $lon2)
     {
         $earthRadius = 6371; // نصف قطر الأرض بالكيلومتر
