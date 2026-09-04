@@ -12,7 +12,7 @@ class orderCard extends Component
     public $order;
     public $branch;
     public $distance;
-    
+
 public function mount($order)
 {
     $this->order = $order;
@@ -51,8 +51,8 @@ public function mount($order)
         $branchLat = $this->branch?->lat ?? $this->branch?->latitude;
         $branchLng = $this->branch?->lng ?? $this->branch?->longitude;
 
-        $addressLat = $this->order->address?->lat ?? $this->order->lat;
-        $addressLng = $this->order->address?->lng ?? $this->order->lng;
+        $addressLat = $this->order->customer_lat ?? $this->order->lat;
+        $addressLng = $this->order->customer_lng ?? $this->order->lng;
 
         if (!$branchLat || !$branchLng || !$addressLat || !$addressLng) {
             return null;
