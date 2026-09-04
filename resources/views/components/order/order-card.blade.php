@@ -46,7 +46,7 @@
 
     ({{ number_format($formattedDistance, 2) }} {{ $unitLabel }}) /
 @endif
-                        {{ $order->customer->name ?? '--' }}
+                        {{ $order->customer->name ?? '--' }} //customer lat {{$order->customer_lat}} // distance {{$distance}}// branch lat {{ $branchLat}}
                     </div>
 
                     {{-- عرض اسم الفرع إذا كان متوفراً --}}
