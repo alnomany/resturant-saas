@@ -91,6 +91,11 @@ public function mount($order)
      */
 public function render(): View|Closure|string
     {
+        dd([
+        'order_id' => $this->order->id ?? 'غير موجود',
+        'branch'   => $this->branch,
+        'distance' => $this->distance,
+    ]);
         return view('components.order.order-card', [
             'order' => $this->order,
             'branch' => $this->branch,
