@@ -57,6 +57,15 @@ public function mount($order)
         if (!$branchLat || !$branchLng || !$addressLat || !$addressLng) {
             return null;
         }
+        // 🔴 طباعة الفحص التشخيصي المباشر
+        dd([
+            '1_order_id'       => $this->order->id ?? 'الطلب غير موجود',
+            '2_branch_found'   => !is_null($this->branch),
+            '3_branch_lat'     => $branchLat,
+            '4_branch_lng'     => $branchLng,
+            '6_customer_lat'   => $addressLat,
+            '7_customer_lng'   => $addressLng,
+        ]);
 
         return $this->haversineDistance($branchLat, $branchLng, $addressLat, $addressLng);
     }
