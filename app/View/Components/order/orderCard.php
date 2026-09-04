@@ -16,6 +16,7 @@ class orderCard extends Component
 public function mount($order)
 {
     $this->order = $order;
+    $this->distance=$distance;
     
     // 1. جلب الفرع المرتبط بالطلب أو الفرع الحالي
     $this->branch = $order->branch ?? branch();
@@ -57,14 +58,7 @@ public function mount($order)
         if (!$branchLat || !$branchLng || !$addressLat || !$addressLng) {
             return null;
         }
-        // 🔴 طباعة الفحص التشخيصي المباشر
-  throw new \Exception(json_encode([
-    'order_id'      => $this->order->id ?? 'غير موجود',
-    'branch_lat'    => $this->branch?->lat ?? $this->branch?->latitude,
-    'branch_lng'    => $this->branch?->lng ?? $this->branch?->longitude,
-    'customer_lat'  => $this->order->customer_lat ?? $this->order->lat ?? $this->order->address?->lat,
-    'customer_lng'  => $this->order->customer_lng ?? $this->order->lng ?? $this->order->address?->lng,
-], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+
 
         return $this->haversineDistance($branchLat, $branchLng, $addressLat, $addressLng);
     }
@@ -90,13 +84,7 @@ public function mount($order)
      */
 public function render(): View|Closure|string
     {
-  throw new \Exception(json_encode([
-    'order_id'      => $this->order->id ?? 'غير موجود',
-    'branch_lat'    => $this->branch?->lat ?? $this->branch?->latitude,
-    'branch_lng'    => $this->branch?->lng ?? $this->branch?->longitude,
-    'customer_lat'  => $this->order->customer_lat ?? $this->order->lat ?? $this->order->address?->lat,
-    'customer_lng'  => $this->order->customer_lng ?? $this->order->lng ?? $this->order->address?->lng,
-], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+
 
         return view('components.order.order-card', [
             'order' => $this->order,
