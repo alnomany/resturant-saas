@@ -32,7 +32,7 @@ class TelegramService
         $itemsText = "";
         if ($order->items && count($order->items) > 0) {
             foreach ($order->items as $item) {
-                $itemsText .= "• {$item->quantity}x {$item->name} - {$item->price} ر.س\n";
+                $itemsText .= "• {$item->quantity}x {$item->menuItem->item_name} - {$item->price} ر.س\n";
             }
         } else {
             $itemsText = "• لا توجد تفاصيل للمنتجات\n";
