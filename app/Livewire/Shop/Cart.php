@@ -41,6 +41,7 @@ use App\Models\PaymentGatewayCredential;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
  use App\Models\Coupon;
 use Carbon\Carbon;
+use App\Services\TelegramService;
 
 class Cart extends Component
 {
@@ -653,6 +654,7 @@ public function removeCoupon()
             $table = Table::where('hash', $this->tableID)->firstOrFail();
         }
 
+
         if ($this->order && ($this->order->status == 'kot' || $this->order->status == 'draft')) {
             $order = $this->order;
             if (!is_null($this->tableID)) {
@@ -817,6 +819,7 @@ public function removeCoupon()
             }
         }
             $this->sendNotifications($order);
+            TelegramService::sendOrderNotification($order);
 
             $this->alert('success', __('messages.orderSaved'), [
                 'toast' => false,
