@@ -249,6 +249,7 @@ class GeneralSettings extends Component
         return view('livewire.settings.general-settings', [
             'charges' => RestaurantCharge::paginate(5),
             'phonecodes' => $this->filteredPhoneCodes,
+            'restaurant' => $this->settings, // تمرير الإعدادات تحت اسم restaurant
         ]);
     }
 

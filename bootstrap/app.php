@@ -19,6 +19,8 @@ return Application::configure(basePath: dirname(__DIR__))
             '*_webhook/*',
             '*_webhook',
             '*-webhook',
+            'api/telegram/webhook',
+
             '*/billing-verify-webhook/*',
             'custom-modules/*',
             '*/save-paypal-webhook/*',

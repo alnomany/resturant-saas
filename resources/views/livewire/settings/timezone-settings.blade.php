@@ -54,6 +54,7 @@
                     </x-select>
                 </div>
             </div>
+                        sdfdsfsdfsdfsdf
 
             <div class="border border-gray-200 dark:border-gray-700 p-6 rounded-lg">
                 <h3 class="mb-6 text-xl font-semibold dark:text-white">@lang('modules.settings.hideTopNav')</h3>

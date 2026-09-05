@@ -39,5 +39,9 @@ return [
         'instance_id' => env('PUSHER_INSTANCE_ID'),
         'beam_secret' => env('PUSHER_BEAM_SECRET'),
     ],
+    'telegram' => [
+    'bot_token' => env('TELEGRAM_BOT_TOKEN'),
+    'bot_username' => env('TELEGRAM_BOT_USERNAME', 'EmlhorOrderBot'),
+],
 
 ];

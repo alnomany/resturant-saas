@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PrintJobController;
 use App\Http\Middleware\DesktopUniqueKeyMiddleware;
+use App\Http\Controllers\TelegramWebhookController;
 
 // called by Electron every X seconds
 Route::middleware(DesktopUniqueKeyMiddleware::class)->group(function () {
@@ -60,3 +61,6 @@ Route::prefix('print-jobs')->group(function () {
         ]);
     });
 });
+
+
+Route::post('/telegram/webhook', [TelegramWebhookController::class, 'handle']);

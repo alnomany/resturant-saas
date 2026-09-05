@@ -3,6 +3,43 @@
         class="mx-4 p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
         <h3 class="mb-4 text-xl font-semibold dark:text-white">@lang('modules.settings.restaurantInformation')</h3>
         <x-help-text class="mb-6">@lang('modules.settings.generalHelp')</x-help-text>
+@php
+    // نضع اسم البوت المباشر في حال لم يقرأه من config
+    $botUsername = config('services.telegram.bot_username') ?: 'EmlhorOrdersBot';
+    $restaurantId = $settings->id ?? null;
+    
+    // الرابط الصحيح المتوقع: https://t.me/EmlhorOrderBot?start=restaurant_5
+    $telegramUrl = $restaurantId ? "https://t.me/{$botUsername}?start=restaurant_" . $restaurantId : '#';
+    $isTelegramActive = !empty($settings->telegram_chat_id);
+
+@endphp
+
+<div class="p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 mt-4">
+    <div class="flex items-center justify-between">
+        <div>
+            <h3 class="font-bold text-gray-800 dark:text-white text-sm">🔔 تنبيهات تليجرام</h3>
+            <p class="text-xs text-gray-500 mt-1">استقبال التنبيهات والطلبات الجديدة فوراً عبر بوت التليجرام.</p>
+        </div>
+
+        <div>
+            @if($isTelegramActive)
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300">
+                    <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                    مفعّل
+                </span>
+            @else
+                @if($restaurantId)
+                    <a href="{{ $telegramUrl }}" 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold py-2 px-3 rounded-lg transition-all shadow-sm">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.16l-1.97 9.28c-.15.67-.54.83-1.1.52l-3.03-2.23-1.46 1.41c-.16.16-.3.3-.61.3l.22-3.08 5.61-5.07c.24-.22-.05-.34-.38-.13l-6.93 4.37-2.98-.93c-.65-.2-.66-.65.14-.96l11.66-4.5c.54-.2 1.01.13.85.83z"/></svg>
+                        ربط التليجرام
+                    </a>
+                @endif
+            @endif
+        </div>
+    </div>
+</div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="border border-gray-200 dark:border-gray-600 rounded-lg p-4">
@@ -74,8 +111,6 @@
                             <x-input-error for="restaurantPhoneCode" class="mt-2" />
                             <x-input-error for="restaurantPhoneNumber" class="mt-2" />
                         </div>
-
-
 
                         <div>
                             <x-label class="mt-4" for="restaurantEmailAddress"
