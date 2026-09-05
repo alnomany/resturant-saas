@@ -27,7 +27,6 @@ class TelegramWebhookController extends Controller
         // 2. استخدام التعبير النمطي (Regex) للتقاط ID المطعم بدقة
         if (preg_match('/\/start\s+restaurant_(\d+)/', $text, $matches)) {
             $restaurantId = $matches[1];
-
             Log::info("Telegram Link Attempt: Restaurant ID={$restaurantId}, Chat ID={$chatId}");
 
             // البحث عن المطعم

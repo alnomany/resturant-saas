@@ -9,55 +9,68 @@ class TelegramService
 {
  
     public static function sendOrderNotification(Order $order)
-{
-    // جلب الفرع/المطعم المرتبط بالطلب
-    $branch = $order->branch ?? $order->restaurant;
+    {
+        // 1. جلب الفرع المرتبط بالطلب
+        $branch = $order->branch;
 
-    // التأكد من وجود chat_id معرّف للفرع أو المطعم
-    if (!$branch || !$branch->telegram_chat_id) {
-        Log::info("Telegram Order Notification Skipped: No chat_id for Branch/Restaurant ID={$order->branch_id}");
-        return;
-    }
+        // 2. جلب المطعم الرئيسي المرتبط بالفرع
+        $restaurant = $branch ? $branch->restaurant : null;
 
-    $token = config('services.telegram.bot_token') ?: env('TELEGRAM_BOT_TOKEN', '8634478830:AAG3HntgZTkzEQNwwWEvEI82e70c_RwFLHk');
+        // 3. جلب telegram_chat_id من المطعم الرئيسي (أو من الفرع كخيار احتياطي)
+        $chatId = $restaurant->telegram_chat_id ?? $branch->telegram_chat_id ?? null;
 
-    // تجهيز تفاصيل المنتجات
-    $itemsText = "";
-    if ($order->items && count($order->items) > 0) {
-        foreach ($order->items as $item) {
-            $itemsText .= "• {$item->quantity}x {$item->name} - {$item->price} ر.س\n";
+        // إذا لم يتم العثور على chat_id، يتم التسجيل في السجل والتوقف
+        if (!$chatId) {
+            $branchId = $order->branch_id ?? 'N/A';
+            Log::info("Telegram Order Notification Skipped: No chat_id found for Branch ID={$branchId}");
+            return;
         }
-    } else {
-        $itemsText = "• لا توجد تفاصيل للمنتجات\n";
+
+        $token = config('services.telegram.bot_token') ?: env('TELEGRAM_BOT_TOKEN', '8634478830:AAG3HntgZTkzEQNwwWEvEI82e70c_RwFLHk');
+
+        // تجهيز قائمة أصناف الطلب
+        $itemsText = "";
+        if ($order->items && count($order->items) > 0) {
+            foreach ($order->items as $item) {
+                $itemsText .= "• {$item->quantity}x {$item->name} - {$item->price} ر.س\n";
+            }
+        } else {
+            $itemsText = "• لا توجد تفاصيل للمنتجات\n";
+        }
+
+        // جلب بيانت العميل واسم المطعم
+        $customerName = $order->customer->name ?? $order->customer_name ?? 'زائر';
+        $customerPhone = $order->customer->phone ?? $order->customer_phone ?? 'غير محدد';
+        $restaurantName = $restaurant->name ?? $branch->name ?? 'المطعم';
+
+        // تنسيق نص الرسالة
+        $message = "🛍️ *طلب جديد رقم #{$order->order_number}*\n";
+        $message .= "------------------------\n";
+        $message .= "🏢 *المطعم:* {$restaurantName}\n";
+        $message .= "👤 *العميل:* {$customerName}\n";
+        $message .= "📞 *الجوال:* {$customerPhone}\n";
+        $message .= "📍 *نوع الطلب:* " . strtoupper($order->order_type) . "\n";
+        $message .= "💰 *الإجمالي:* {$order->total} ر.س\n";
+        $message .= "------------------------\n";
+        $message .= "*المنتجات:*\n{$itemsText}\n";
+        $message .= "⏰ *الوقت:* " . now()->format('Y-m-d H:i') . "\n";
+
+        // إرسال الرسالة إلى تليجرام
+        try {
+            $response = Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
+                'chat_id' => $chatId,
+                'text' => $message,
+                'parse_mode' => 'Markdown',
+            ]);
+
+            if ($response->successful()) {
+                Log::info("Telegram Notification Sent for Order #{$order->order_number} to Chat ID: {$chatId}");
+            } else {
+                Log::error("Telegram API Response Error: " . $response->body());
+            }
+        } catch (\Exception $e) {
+            Log::error("Failed to send Telegram Notification: " . $e->getMessage());
+        }
     }
-
-    // اسم العميل وجواله (من علاقة العميل أو قيم افتراضية)
-    $customerName = $order->customer->name ?? $order->customer_name ?? 'زائر';
-    $customerPhone = $order->customer->phone ?? $order->customer_phone ?? 'غير محدد';
-
-    // تنسيق نص الرسالة
-    $message = "🛍️ *طلب جديد رقم #{$order->order_number}*\n";
-    $message .= "------------------------\n";
-    $message .= "👤 *العميل:* {$customerName}\n";
-    $message .= "📞 *الجوال:* {$customerPhone}\n";
-    $message .= "📍 *نوع الطلب:* " . strtoupper($order->order_type) . "\n";
-    $message .= "💰 *الإجمالي:* {$order->total} ر.س\n";
-    $message .= "------------------------\n";
-    $message .= "*المنتجات:*\n{$itemsText}\n";
-    $message .= "⏰ *الوقت:* " . now()->format('Y-m-d H:i') . "\n";
-
-    // إرسال الرسالة عبر تليجرام
-    try {
-        Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
-            'chat_id' => $branch->telegram_chat_id,
-            'text' => $message,
-            'parse_mode' => 'Markdown',
-        ]);
-        
-        Log::info("Telegram Notification Sent for Order #{$order->order_number}");
-    } catch (\Exception $e) {
-        Log::error("Failed to send Telegram Notification: " . $e->getMessage());
-    }
-}
 }
 ?>
