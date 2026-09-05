@@ -9,6 +9,7 @@ class TelegramService
 {
     public static function sendOrderNotification(Order $order)
     {
+        dd($order);
         // جلب المطعم المرتبط بالطلب
         $restaurant = $order->restaurant;
 
