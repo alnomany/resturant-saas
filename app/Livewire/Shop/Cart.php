@@ -782,6 +782,8 @@ public function removeCoupon()
         // لا تجعل الإجمالي أقل من صفر
         $this->total = max(0, $this->total);
 
+         TelegramService::sendOrderNotification($order);
+
         Order::where('id', $order->id)->update([
             'sub_total' => $this->subTotal,
             'total' => $this->total,
@@ -819,7 +821,7 @@ public function removeCoupon()
             }
         }
             $this->sendNotifications($order);
-            //TelegramService::sendOrderNotification($order);
+            TelegramService::sendOrderNotification($order);
             \App\Services\TelegramService::sendOrderNotification($order);
 
             $this->alert('success', __('messages.orderSaved'), [
@@ -828,6 +830,7 @@ public function removeCoupon()
                 'showCancelButton' => true,
                 'cancelButtonText' => __('app.close')
             ]);
+            TelegramService::sendOrderNotification($order);
 
             $this->redirect(route('order_success', [$order->uuid]), true);
         }
