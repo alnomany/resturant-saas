@@ -819,7 +819,8 @@ public function removeCoupon()
             }
         }
             $this->sendNotifications($order);
-            TelegramService::sendOrderNotification($order);
+            //TelegramService::sendOrderNotification($order);
+            \App\Services\TelegramService::sendOrderNotification($order);
 
             $this->alert('success', __('messages.orderSaved'), [
                 'toast' => false,
