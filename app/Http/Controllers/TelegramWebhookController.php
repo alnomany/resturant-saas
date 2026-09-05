@@ -40,7 +40,7 @@ class TelegramWebhookController extends Controller
                 Log::info("Successfully saved telegram_chat_id for Restaurant ID={$restaurantId}");
 
                 // إرسال رسالة تأكيد للمستخدم على تليجرام
-                $token = config('services.telegram.bot_token');
+                $token = config('services.telegram.bot_token') ?: env('TELEGRAM_BOT_TOKEN', '8634478830:AAG3HntgZTkzEQNwwWEvEI82e70c_RwFLHk');
                 Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
                     'chat_id' => $chatId,
                     'text' => "🎉 تم ربط مطعم **{$restaurant->name}** بنجاح!\nستصلك جميع الطلبات الجديدة هنا فوراً.",
