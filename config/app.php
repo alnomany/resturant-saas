@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'TableTrack'),
+    'name' => env('APP_NAME', 'Emlhor'),
     'main_application_subdomain' => env('MAIN_APPLICATION_SUBDOMAIN'),
     'short_domain_name' => env('SHORT_DOMAIN_NAME', false),
     'redirect_https' => env('REDIRECT_HTTPS', false),
@@ -69,6 +69,7 @@ return [
     */
 
     'timezone' => env('APP_TIMEZONE', 'UTC'),
+    'timezone' => 'Asia/Riyadh',
 
     /*
     |--------------------------------------------------------------------------
