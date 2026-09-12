@@ -1490,6 +1490,9 @@ return [
         'timePeriodEachDay' => 'Time Period Each Day',
         'timePeriodEachMonth' => 'Time Period Each Month',
         'timePeriodEachYear' => 'Time Period Each Year',
+        'returningCustomers' => 'Returning Customers',
+        'returningOrders' => 'Returning Customer Orders',
+        'returningRevenue' => 'Returning Customer Revenue',
     ],
 
     'kot' => [

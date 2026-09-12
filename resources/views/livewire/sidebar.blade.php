@@ -79,6 +79,9 @@
                         @livewire('sidebar-menu-item', ['name' => __('menu.waiterRequest'), 'icon' => 'waiterRequest', 'link' => route('waiter-requests.index'), 'active' => request()->routeIs('waiter-requests.*')])
                         @endif
 
+                        @livewire('sidebar-menu-item', ['name' => __('menu.sliders'), 'icon' => 'waiterRequest1' ,'link' => route('slider'), 'active' => request()->routeIs('slider')])
+
+
                         @if ($this->hasModule('Reservation') && user_can('Show Reservation'))
                         @livewire('sidebar-menu-item', ['name' => __('menu.reservations'), 'icon' => 'reservations', 'link' => route('reservations.index'), 'active' => request()->routeIs('reservations.index')])
                         @endif

@@ -221,9 +221,159 @@ class SalesReport extends Component
         $paymentGateway = PaymentGatewayCredential::select('stripe_status', 'razorpay_status', 'flutterwave_status')
             ->where('restaurant_id', restaurant()->id)
             ->first();
+        //ahmed// 1. جلب IDs للعملاء الذين لديهم أكثر من طلب مدفوع في الفرع الحالي
+        $returningCustomerIds = DB::table('orders')
+            ->where('status', 'paid')
+            ->where('branch_id', branch()->id)
+            ->whereNotNull('customer_id')
+            ->groupBy('customer_id')
+            ->havingRaw('COUNT(id) > 1')
+            ->pluck('customer_id');
+
+        // 2. استعلام حساب (عدد العملاء، عدد الطلبات، ومجموع المبالغ) للعملاء المتكررين ضمن الفلاتر المحددة
+        $returningStats = Order::join('payments', 'orders.id', '=', 'payments.order_id')
+            ->whereBetween('orders.date_time', [$dateTimeData['startDateTime'], $dateTimeData['endDateTime']])
+            ->where('orders.status', 'paid')
+            ->where('orders.branch_id', branch()->id)
+            ->whereIn('orders.customer_id', $returningCustomerIds)
+            ->when($this->filterByWaiter, function ($q) {
+                $q->where('orders.waiter_id', $this->filterByWaiter);
+            })
+            ->where(function ($q) use ($dateTimeData) {
+                if ($dateTimeData['startTime'] < $dateTimeData['endTime']) {
+                    $q->whereRaw('TIME(orders.date_time) BETWEEN ? AND ?', [$dateTimeData['startTime'], $dateTimeData['endTime']]);
+                } else {
+                    $q->where(function ($sub) use ($dateTimeData) {
+                        $sub->whereRaw('TIME(orders.date_time) >= ?', [$dateTimeData['startTime']])
+                            ->orWhereRaw('TIME(orders.date_time) <= ?', [$dateTimeData['endTime']]);
+                    });
+                }
+            })
+            ->selectRaw('
+            -- 1. إجمالي عدد العملاء (الفريدين)
+                COUNT(DISTINCT orders.customer_id) as total_returning_customers,
+                COUNT(DISTINCT orders.id) as total_returning_orders,
+                SUM(payments.amount) as total_returning_amount
+            ')
+            ->first();
+        // Base Query للطلبات المدفوعة ضمن النطاق
+        $baseOrdersQuery = Order::join('payments', 'orders.id', '=', 'payments.order_id')
+            ->whereBetween('orders.date_time', [$dateTimeData['startDateTime'], $dateTimeData['endDateTime']])
+            ->where('orders.status', 'paid')
+            ->where('orders.branch_id', branch()->id)
+            ->where(function ($q) use ($dateTimeData) {
+                if ($dateTimeData['startTime'] < $dateTimeData['endTime']) {
+                    $q->whereRaw('TIME(orders.date_time) BETWEEN ? AND ?', [$dateTimeData['startTime'], $dateTimeData['endTime']]);
+                } else {
+                    $q->where(function ($sub) use ($dateTimeData) {
+                        $sub->whereRaw('TIME(orders.date_time) >= ?', [$dateTimeData['startTime']])
+                            ->orWhereRaw('TIME(orders.date_time) <= ?', [$dateTimeData['endTime']]);
+                    });
+                }
+            });
+
+  
+
+        // 2. إجمالي عدد الطلبات وإجمالي عدد العملاء الفريدين بشكل عام
+        $generalStats = (clone $baseOrdersQuery)
+            ->selectRaw('
+                COUNT(DISTINCT orders.id) as total_general_orders,
+                COUNT(DISTINCT orders.customer_id) as total_general_customers
+            ')
+            ->first();
+
+        // 3. اليوم الأعلى من حيث عدد الطلبات والمبيعات
+        $peakDay = $query->sortByDesc('total_orders')->first();
+
+        // 4. أكثر وأقل المنتجات طلباً
+        $itemStatsQuery = DB::table('order_items')
+            ->join('orders', 'order_items.order_id', '=', 'orders.id')
+            ->join('menu_items', 'order_items.menu_item_id', '=', 'menu_items.id')
+            ->whereBetween('orders.date_time', [$dateTimeData['startDateTime'], $dateTimeData['endDateTime']])
+            ->where('orders.status', 'paid')
+            ->where('orders.branch_id', branch()->id)
+            ->when($this->filterByWaiter, function ($q) {
+                $q->where('orders.waiter_id', $this->filterByWaiter);
+            })
+            ->where(function ($q) use ($dateTimeData) {
+                if ($dateTimeData['startTime'] < $dateTimeData['endTime']) {
+                    $q->whereRaw('TIME(orders.date_time) BETWEEN ? AND ?', [$dateTimeData['startTime'], $dateTimeData['endTime']]);
+                } else {
+                    $q->where(function ($sub) use ($dateTimeData) {
+                        $sub->whereRaw('TIME(orders.date_time) >= ?', [$dateTimeData['startTime']])
+                            ->orWhereRaw('TIME(orders.date_time) <= ?', [$dateTimeData['endTime']]);
+                    });
+                }
+            })
+            ->select(
+                'menu_items.item_name',
+                DB::raw('SUM(order_items.quantity) as total_quantity')
+            )
+            ->groupBy('order_items.menu_item_id', 'menu_items.item_name');
+
+        $topSellingItems = (clone $itemStatsQuery)->orderByDesc('total_quantity')->take(5)->get();
+        $leastSellingItems = (clone $itemStatsQuery)->orderBy('total_quantity', 'asc')->take(5)->get();
+        $dateTimeData = $this->prepareDateTimeData();
+        $start = $dateTimeData['startDateTime'];
+        $end = $dateTimeData['endDateTime'];
+        $restaurantId = restaurant()->id;
+        // 1. حساب إجمالي المصاريف في الفترة المحددة
+        $totalExpenses = DB::table('expenses')
+            // ->whereBetween('date', [$fromDate, $toDate]) // إذا كان لديك فلتر تاريخ
+            ->whereBetween('expenses.expense_date', [$start, $end])
+                         ->where('expenses.branch_id', branch()->id)
+
+            ->sum('amount');
+
+        // 2. معرفة أعلى تصنيف مصاريف (Category) وحجم الصرف فيه
+        $topExpenseCategory = DB::table('expenses')
+            ->join('expense_categories', 'expense_categories.id', '=', 'expenses.expense_category_id')
+            // ->whereBetween('expenses.date', [$fromDate, $toDate])
+             ->where('expenses.branch_id', branch()->id)
+             ->whereBetween('expenses.expense_date', [$start, $end])
+
+            ->select('expense_categories.name', DB::raw('SUM(expenses.amount) as total_amount'))
+            ->groupBy('expense_categories.id', 'expense_categories.name')
+            ->orderByDesc('total_amount')
+            ->first();
+     
+            // معرفات الأصناف المباعة خلال الفترة والفرع المحدد
+        $soldMenuItemIds = DB::table('order_items')
+            ->join('orders', 'orders.id', '=', 'order_items.order_id')
+             ->where('orders.branch_id', branch()->id)
+            ->whereBetween('orders.created_at', [$start, $end])
+            ->pluck('order_items.menu_item_id')
+            ->unique();
+
+        // عدد الأصناف الخاملة لنفس الفرع
+        $deadMenuItemsCount = DB::table('menu_items')
+            ->where('menu_items.branch_id', branch()->id)
+            ->whereNotIn('id', $soldMenuItemIds)
+            ->count();
 
         return view('livewire.reports.sales-report', [
             'menuItems' => $groupedData,
+            // إحصائيات عامة
+            'totalGeneralOrders'     => $generalStats->total_general_orders ?? 0,
+            'totalGeneralCustomers'  => $generalStats->total_general_customers ?? 0,
+            'peakDay'                 => $peakDay ? $peakDay->date : null,
+            'peakDayOrders'           => $peakDay ? $peakDay->total_orders : 0,
+            
+            // أكثر وأقل المنتجات مبيعات
+            'topSellingItems'         => $topSellingItems,
+            'leastSellingItems'       => $leastSellingItems,
+            //المصاريف والارباح 
+            'totalExpenses' => $totalExpenses,
+            'topExpenseCategory'=> $topExpenseCategory,
+
+            //
+            'deadMenuItemsCount' => $deadMenuItemsCount,
+            'topExpenseCategory' => $topExpenseCategory,
+
+            
+            'totalReturningCustomers' => $returningStats->total_returning_customers ?? 0,
+            'totalReturningOrders'    => $returningStats->total_returning_orders ?? 0,
+            'totalReturningAmount'    => $returningStats->total_returning_amount ?? 0,
             'charges' => $charges,
             'taxes' => $taxes,
             'paymentGateway' => $paymentGateway,

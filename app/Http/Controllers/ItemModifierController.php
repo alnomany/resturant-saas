@@ -12,4 +12,11 @@ class ItemModifierController extends Controller
         // abort_if((!user_can('Show Item Category')), 403);
         return view('item_modifiers.index');
     }
+        public function slider()
+    {
+        
+
+        return view('item_modifiers.slider-item');
+    }
+
 }

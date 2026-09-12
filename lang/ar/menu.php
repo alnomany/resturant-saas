@@ -33,6 +33,8 @@ return array(
     'contact' => 'اتصل بنا',
     'staff' => 'طاقم العمل / الموظفين',
     'bookTable' => 'أحجز ',
+    'sliders'=>'سلايدر',
+    'sliderTitle'=>'العنوان',
     'myBookings' => 'حجوزاتي',
     'reservations' => 'الحجوزات',
     'customerSite' => 'موقع العميل',

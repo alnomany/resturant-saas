@@ -30,16 +30,95 @@
                     {{ currency_format($menuItems->sum('total_amount'), restaurant()->currency_id) }}
                 </p>
 
-                <div class="space-y-2">
-                    <div class="flex items-center justify-between rounded-lg bg-skin-base/10 p-3 dark:bg-skin-base/10">
-                        <span class="text-sm font-medium text-skin-base dark:text-skin-base">
-                            @lang('modules.report.orders')
-                        </span>
-                        <span class="text-sm font-bold text-skin-base dark:text-skin-base">
-                            {{ $menuItems->sum('total_orders') }}
-                        </span>
+                <div class="space-y-3">
+
+                        <!-- الأكثر مبيعاً -->
+                        <div class="rounded-lg bg-skin-base/10 p-3 dark:bg-skin-base/10 space-y-2">
+                            <span class="text-sm font-medium text-skin-base block border-b border-skin-base/20 pb-1">
+                                الأكثر مبيعاً
+                            </span>
+                            @forelse($topSellingItems as $item)
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-sm font-medium text-emerald-700 dark:text-emerald-100">{{ $item->item_name }}</span>
+                                    <span class="text-sm font-medium text-emerald-700 dark:text-emerald-100">{{ $item->total_quantity }}</span>
+                                </div>
+                            @empty
+                                <span class="text-xs text-skin-base/50 block">لا توجد بيانات</span>
+                            @endforelse
+                        </div>
+                        <!-- الأقل مبيعاً -->
+                        <div class="rounded-lg bg-skin-base/10 p-3 dark:bg-skin-base/10 space-y-2">
+                            <span class="text-sm font-medium text-skin-base block border-b border-skin-base/20 pb-1">
+                                الأقل مبيعاً
+                            </span>
+                            @forelse($leastSellingItems as $item)
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-sm font-medium text-emerald-700 dark:text-emerald-100">{{ $item->item_name }}</span>
+                                    <span class="text-sm font-medium text-emerald-700 dark:text-emerald-100">{{ $item->total_quantity }}</span>
+                                </div>
+                            @empty
+                                <span class="text-xs text-skin-base/50 block">لا توجد بيانات</span>
+                            @endforelse
+                        </div>
+                </div>
+            </div>
+
+                       <!-- المصاريف expensensed -->
+            <div class="p-4 bg-skin-base/10 rounded-xl shadow-sm dark:bg-skin-base/10 border border-skin-base/30 dark:border-skin-base/40">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-sm font-medium text-skin-base dark:text-skin-base">إجمالي المصاريف</h3>
+                    <div class="p-2 bg-skin-base/10 rounded-lg dark:bg-skin-base/10">
+                        <svg class="w-4 h-4 text-skin-base dark:text-skin-base" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"/><g stroke-linecap="round" stroke-linejoin="round"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 13.75c0 .97.75 1.75 1.67 1.75h1.88c.8 0 1.45-.68 1.45-1.53 0-.91-.4-1.24-.99-1.45l-3.01-1.05c-.59-.21-.99-.53-.99-1.45 0-.84.65-1.53 1.45-1.53h1.88c.92 0 1.67.78 1.67 1.75M12 7.5v9"/><path d="M22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m10 4V2h-4m-1 5 5-5"/></g></svg>
                     </div>
                 </div>
+                <p class="text-3xl break-words font-bold text-skin-base dark:text-skin-base mb-4">
+                    {{ currency_format($totalExpenses ?? 0, restaurant()->currency_id)  }}
+                </p>
+
+           <div class="space-y-3">
+
+    <!-- أعلى تصنيف مصاريف -->
+    <div class="rounded-lg bg-skin-base/10 p-3 dark:bg-skin-base/10 space-y-2">
+        <span class="text-sm font-medium text-skin-base block border-b border-skin-base/20 pb-1">
+            أعلى صنف مصاريف
+        </span>
+        @if(isset($topExpenseCategory) && $topExpenseCategory)
+            <div class="flex items-center justify-between text-xs">
+                <span class="text-sm font-medium text-emerald-700 dark:text-emerald-100">{{ $topExpenseCategory->name }}</span>
+                <span class="text-sm font-medium text-emerald-700 dark:text-emerald-100">{{ currency_format($topExpenseCategory->total_amount, restaurant()->currency_id) }}</span>
+            </div>
+        @else
+            <span class="text-xs text-skin-base/50 block">لا توجد بيانات</span>
+        @endif
+    </div>
+
+    <!-- كرت صافي الربح / الخسارة -->
+    @php
+        $netProfit = ($menuItems->sum('total_amount') ?? 0) - ($totalExpenses ?? 0);
+    @endphp
+
+    <div class="rounded-lg bg-skin-base/10 p-3 dark:bg-skin-base/10 space-y-2">
+        <span class="text-sm font-medium text-skin-base block border-b border-skin-base/20 pb-1">
+            صافي الأرباح
+        </span>
+        <div class="flex items-center justify-between text-xs">
+            <span class="text-sm font-medium {{ $netProfit < 0 ? 'text-rose-600 dark:text-rose-400 font-bold' : 'text-emerald-700 dark:text-emerald-100' }}">
+                {{ currency_format($netProfit, restaurant()->currency_id) }}
+            </span>
+        </div>
+
+        {{-- التنبيه عند وجود خسارة (قيمة بالسالب) --}}
+        @if($netProfit < 0)
+            <div class="mt-2 rounded-md bg-rose-500/10 p-2 border border-rose-500/20 text-xs text-rose-600 dark:text-rose-400 flex items-center gap-1.5 font-medium">
+                <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                <span>تنبيه: المصاريف تتجاوز المبيعات، لابد من تحسين وتنشيط مبيعاتك!</span>
+            </div>
+        @endif
+    </div>
+
+</div>
             </div>
 
             <!-- Total Cash Card -->
@@ -76,7 +155,171 @@
                         @endforeach
                     </div>
             </div>
+                        <!-- Customers -->
+     <!-- Customers -->
+<div class="p-4 bg-emerald-50 rounded-xl shadow-sm dark:bg-emerald-900/10 border border-emerald-100 dark:border-emerald-800">
+    <div class="flex items-center justify-between mb-4">
+        <h3 class="text-base font-semibold text-gray-800 dark:text-gray-200">@lang('modules.report.NumberCustomer')</h3>
+        <div class="p-2 bg-emerald-100 text-emerald-600 rounded-lg dark:bg-emerald-900/20 dark:text-emerald-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2m7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+        </div>
+    </div>
+    <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+        {{ $totalGeneralCustomers ?? 0 }}
+    </p>
+    <div class="space-y-2">
+        @php
+            $traditionalPayments = [
+                'returningCustomers' => $totalReturningCustomers ?? 0,
+                'returningOrders' => $totalReturningOrders ?? 0,
+                'returningRevenue' => $totalReturningAmount ?? 0
+            ];
 
+            // حساب العملاء غير المتكررين (الجدد)
+            $totalGeneral = $totalGeneralCustomers ?? 0;
+            $totalReturning = $totalReturningCustomers ?? 0;
+            $nonReturningCustomers = max(0, $totalGeneral - $totalReturning);
+        @endphp
+
+        @foreach($traditionalPayments as $method => $amount)
+            <div class="flex items-center justify-between rounded-lg bg-emerald-100/50 p-3 dark:bg-emerald-900/20">
+                <span class="text-sm font-medium text-emerald-700 dark:text-emerald-100">
+                    @lang("modules.report.{$method}")
+                </span>
+                <span class="text-sm font-bold text-emerald-700 dark:text-emerald-400">
+                    {{ $method === 'returningRevenue' ? currency_format($amount, restaurant()->currency_id) : $amount }}
+                </span>
+            </div>
+        @endforeach
+
+        {{-- تنبيه العملاء غير المتكررين --}}
+        @if($nonReturningCustomers > 0)
+            <div class="mt-3 rounded-lg bg-amber-500/10 p-3 border border-amber-500/20 text-xs text-amber-700 dark:text-amber-400 flex items-start gap-2 font-medium">
+                <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                    <span>تنبيه: لديك <strong>{{ $nonReturningCustomers }}</strong> عميل من أصل <strong>{{ $totalGeneral }}</strong> غير متكررين!</span>
+                    <p class="mt-1 text-[11px] opacity-90">حاول إطلاق حملة عروض أو خصومات مخصصة لإعادتهم للطلب مرة أخرى.</p>
+                </div>
+            </div>
+        @endif
+    </div>
+</div>
+
+            <!-- Intelligent Operational Efficiency Card -->
+<div class="p-4 bg-indigo-50 rounded-xl shadow-sm dark:bg-indigo-900/10 border border-indigo-100 dark:border-indigo-800">
+    <div class="flex items-center justify-between mb-4">
+        <h3 class="text-base font-semibold text-gray-800 dark:text-gray-200">تحليل كفاءة التشغيل والمنيو</h3>
+        <div class="p-2 bg-indigo-100 text-indigo-600 rounded-lg dark:bg-indigo-900/20 dark:text-indigo-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+        </div>
+    </div>
+
+    @php
+        // 1. حساب متوسط قيمة الفاتورة
+        $totalOrdersCount = $totalGeneralOrders ?? 0;
+        $totalSalesAmount = $menuItems->sum('total_amount') ?? 0;
+        $averageOrderValue = $totalOrdersCount > 0 ? ($totalSalesAmount / $totalOrdersCount) : 0;
+
+        // 2. افتراض الأصناف الخاملة (تكون مجهزة من الـ Component)
+        $deadItemsCount = $deadMenuItemsCount ?? 0; 
+    @endphp
+
+    <div class="mb-4">
+        <span class="text-xs text-gray-500 dark:text-gray-400 font-medium block">متوسط قيمة السلة / الفاتورة</span>
+        <p class="text-3xl font-bold text-gray-900 dark:text-white">
+            {{ currency_format($averageOrderValue, restaurant()->currency_id) }}
+        </p>
+    </div>
+
+    <div class="space-y-2">
+        <div class="flex items-center justify-between rounded-lg bg-indigo-100/50 p-3 dark:bg-indigo-900/20">
+            <span class="text-sm font-medium text-indigo-700 dark:text-indigo-100">
+                إجمالي الطلبات الكلية
+            </span>
+            <span class="text-sm font-bold text-indigo-700 dark:text-indigo-400">
+                {{ $totalOrdersCount }}
+            </span>
+        </div>
+
+        <div class="flex items-center justify-between rounded-lg bg-indigo-100/50 p-3 dark:bg-indigo-900/20">
+            <span class="text-sm font-medium text-indigo-700 dark:text-indigo-100">
+                أصناف لم تباع (أصناف خاملة)
+            </span>
+            <span class="text-sm font-bold {{ $deadItemsCount > 0 ? 'text-rose-600 dark:text-rose-400' : 'text-indigo-700 dark:text-indigo-400' }}">
+                {{ $deadItemsCount }} أصناف
+            </span>
+        </div>
+
+        {{-- تنبيهات ذكية بناءً على المؤشرات --}}
+        
+        {{-- تنبيه 1: متوسط الفاتورة منخفض --}}
+        @if($averageOrderValue > 0 && $averageOrderValue < 35) {{-- يمكن تغيير الـ 35 حسب متوسط مطعمك --}}
+            <div class="mt-3 rounded-lg bg-amber-500/10 p-3 border border-amber-500/20 text-xs text-amber-700 dark:text-amber-400 flex items-start gap-2 font-medium">
+                <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                <div>
+                    <span><strong>قرار تسويقي:</strong> متوسط الفاتورة منخفض ({{ currency_format($averageOrderValue, restaurant()->currency_id) }}).</span>
+                    <p class="mt-1 text-[11px] opacity-90">أنشئ وجبات مجمعة (Combos) أو اقتراحات "إضافة مشروب/حلى" لزيادة قيمة طلب الزبون.</p>
+                </div>
+            </div>
+        @endif
+
+        {{-- تنبيه 2: وجود أصناف خاملة --}}
+        @if($deadItemsCount > 0)
+            <div class="mt-2 rounded-lg bg-rose-500/10 p-3 border border-rose-500/20 text-xs text-rose-700 dark:text-rose-400 flex items-start gap-2 font-medium">
+                <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+                <div>
+                    <span><strong>قرار تشغيلي:</strong> لديك {{ $deadItemsCount }} أصناف لم يطلبها أحد خلال هذه الفترة.</span>
+                    <p class="mt-1 text-[11px] opacity-90">يُوصى بإخفائها من المنيو لتقليل هدر المواد الأولية وتسريع عملية اختيار العميل.</p>
+                </div>
+            </div>
+        @endif
+    </div>
+</div>
+               <!-- Orders -->
+            <div class="p-4 bg-emerald-50 rounded-xl shadow-sm dark:bg-emerald-900/10 border border-emerald-100 dark:border-emerald-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-base font-semibold text-gray-800 dark:text-gray-200">@lang('modules.report.orders')</h3>
+                        <div class="p-2 bg-emerald-100 text-emerald-600 rounded-lg dark:bg-emerald-900/20 dark:text-emerald-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2m7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                        {{ $totalGeneralOrders }}
+                    </p>
+                    <div class="space-y-2">
+                        @php
+                            $traditionalPayments = [
+                                'mostOrderedDate' => $peakDay,
+                                'peakDayOrders' => $peakDayOrders,
+                            ];
+                        @endphp
+
+                        @foreach($traditionalPayments as $method => $amount)
+                            <div class="flex items-center justify-between rounded-lg bg-emerald-100/50 p-3 dark:bg-emerald-900/20">
+                                <span class="text-sm font-medium text-emerald-700 dark:text-emerald-100">
+                                    @lang("modules.report.{$method}")
+                                </span>
+                                <span class="text-sm font-bold text-emerald-700 dark:text-emerald-400">
+                                    {{ $amount}}
+                                </span>
+                            </div>
+                        @endforeach
+                        <!-- عرض الأكثر مبيعاً -->
+
+                    </div>
+            </div>
             <!-- Online Payments Card -->
             <div class="p-4 bg-emerald-50 rounded-xl shadow-sm dark:bg-emerald-900/10 border border-emerald-100 dark:border-emerald-800">
                     <div class="flex items-center justify-between mb-4">
@@ -165,6 +408,11 @@
                         @endforeach
                 </div>
             </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
+
+
+
+</div>
         </div>
 
         <!-- Filter Section -->

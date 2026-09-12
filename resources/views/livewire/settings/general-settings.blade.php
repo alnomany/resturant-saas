@@ -5,7 +5,7 @@
         <x-help-text class="mb-6">@lang('modules.settings.generalHelp')</x-help-text>
 @php
     // نضع اسم البوت المباشر في حال لم يقرأه من config
-    $botUsername = config('services.telegram.bot_username') ?: 'EmlhorOrdersBot';
+    $botUsername = config('services.telegram.bot_username') ?: 'EmlhorOrderBot';
     $restaurantId = $settings->id ?? null;
     
     // الرابط الصحيح المتوقع: https://t.me/EmlhorOrderBot?start=restaurant_5

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="p-4 bg-white block dark:bg-gray-800 dark:border-gray-700">
+<div class="p-4 bg-white block  dark:bg-gray-800 dark:border-gray-700">
     <div class="flex justify-between">
         <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">@lang('menu.dashboard')</h1>
 
@@ -15,21 +15,15 @@
             {{ now()->timezone(timezone())->translatedFormat('l, d M, h:i A') }}
         </div>
     </div>
+
+    
 </div>
 
 <x-banner />
 
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+<div class="grid lg:grid-cols-3">
 
-    {{-- عمود طلبات اليوم (على اليمين في الواجهات العربية) --}}
-    <div class="p-4 lg:order-2">
-        @if (user_can('Show Order'))
-        @livewire('dashboard.todayOrderList')
-        @endif
-    </div>
-
-    {{-- عمود الاحصائيات والرسوم البيانية --}}
-    <div class="p-4 sm:col-span-2 lg:order-1">
+    <div class="sm:col-span-2 p-4">
         <h1 class="text-xl font-semibold text-gray-900 sm:text-xl dark:text-white my-2 px-4">@lang('modules.dashboard.todayStats')</h1>
 
         <div class="grid w-full grid-cols-1 gap-4 xl:grid-cols-2">
@@ -58,6 +52,7 @@
         </div>
         @endif
 
+
         @if (user_can('Show Reports'))
         <div class="grid grid-cols-1 gap-4 mb-10">
             @livewire('dashboard.todayPaymentMethodEarnings')
@@ -70,6 +65,12 @@
 
     </div>
 
+    <div class="p-4">
+        @if (user_can('Show Order'))
+        @livewire('dashboard.todayOrderList')
+        @endif
+
+    </div>
 </div>
 
 @endsection

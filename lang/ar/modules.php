@@ -842,4 +842,193 @@ return [
         'staff_welcome' => 'البريد الإلكتروني الترحيبي للموظف',
         'staff_welcome_info' => 'سيتلقى عضو فريق العمل بريدًا إلكترونيًا ترحيبيًا عند إضافته كموظف جديد.',
     ],
+    'dashboard' => [
+
+        'todayOrderCount' => 'طلبات اليوم',
+
+        'todayEarnings' => 'أرباح اليوم',
+
+        'sinceYesterday' => 'منذ أمس',
+
+        'todayStats' => 'الإحصائيات',
+
+        'todayCustomerCount' => 'عملاء اليوم',
+
+        'averageDailyEarning' => 'متوسط الأرباح اليومية',
+
+        'sincePreviousMonth' => 'منذ الشهر السابق',
+
+        'earnings' => 'الأرباح',
+
+        'salesThisMonth' => 'مبيعات هذا الشهر',
+
+        'topTables' => 'الطاولات الأكثر مبيعًا',
+
+        'topDish' => 'الطبق الأكثر مبيعًا',
+
+        'todayRestaurantCount' => 'عدد المطاعم اليوم',
+
+        'totalRestaurantCount' => 'إجمالي عدد المطاعم',
+
+        'totalFreeRestaurantCount' => 'إجمالي المطاعم المجانية',
+
+        'totalPaidRestaurantCount' => 'إجمالي المطاعم المدفوعة',
+
+        'verificationPendingInfo' => 'مطعمك قيد التحقق. يرجى الانتظار حتى موافقة المسؤول.',
+
+        'verificationPending' => 'بانتظار التحقق',
+
+        'verificationPendingDescription' => 'المطعم بانتظار الموافقة',
+
+        'verificationRejectedInfo' => 'تم رفض التحقق من مطعمك. يرجى التواصل مع المسؤول لمزيد من التفاصيل.',
+
+        'approvalStatus' => 'حالة الموافقة',
+
+        'onboarding' => 'الإعداد الأولي',
+
+        'onboardingDescription' => 'أكمل هذه الخطوات لإعداد التطبيق بشكل صحيح قبل استخدامه.',
+
+        'installation' => 'التثبيت',
+
+        'installationCompleted' => 'تم تثبيت التطبيق بنجاح.',
+
+        'smtpConfiguration' => 'إعدادات SMTP',
+
+        'smtpConfigurationDescription' => 'قم بتهيئة إعدادات البريد الإلكتروني لضمان عمل جميع إشعارات البريد الإلكتروني بشكل صحيح.',
+
+        'cronJobConfiguration' => 'إعدادات CRON',
+
+        'cronJobConfigurationDescription' => 'قم بإعداد مهام CRON لضمان تشغيل المهام التلقائية بشكل صحيح.',
+
+        'applicationNameChange' => 'تغيير اسم التطبيق',
+
+        'applicationNameChangeDescription' => 'قم بتخصيص اسم التطبيق ليتناسب مع علامتك التجارية.',
+
+],
+
+'report' => [
+
+    'totalSales' => 'إجمالي المبيعات',
+
+    'orders' => 'الطلبات',
+    'ordersNumber' => 'عدد الطلبات',
+    'mostOrderedDate' => 'التاريخ الأعلى طلبًا',
+    'peakDayOrders'=>'عدد طلبات اليوم الأكثر طلبًا',
+    'topSellingItems'=>'الاكثر منتجات طلبا',
+
+
+    'cashPayments' => 'المدفوعات النقدية',
+
+    'digitalPayments' => 'المدفوعات الإلكترونية',
+
+    'averageOrderValue' => 'متوسط قيمة الطلب',
+
+    'totalRevenue' => 'إجمالي الإيرادات',
+
+    'imSales' => 'مبيعات الأصناف',
+
+    'quantitySold' => 'الكمية المباعة',
+
+    'topSellingItems' => 'الأصناف الأكثر مبيعًا',
+
+    'sellingPrice' => 'سعر البيع',
+
+    'salesByCategory' => 'المبيعات حسب التصنيف',
+
+    'salesByPaymentMethod' => 'المبيعات حسب طريقة الدفع',
+
+    'orderType' => 'نوع الطلب',
+
+    'salesByTime' => 'المبيعات حسب الوقت',
+
+    'salesByDay' => 'المبيعات حسب اليوم',
+
+    'salesByMonth' => 'المبيعات حسب الشهر',
+
+    'salesByYear' => 'المبيعات حسب السنة',
+
+    'totalTaxes' => 'إجمالي الضرائب',
+
+    'totalDiscounts' => 'إجمالي الخصومات',
+
+    'averageItems' => 'متوسط عدد الأصناف في الطلب',
+
+    'grossSales' => 'إجمالي المبيعات قبل الخصم',
+
+    'netSales' => 'صافي المبيعات',
+
+    'totalRefunds' => 'إجمالي المبالغ المستردة',
+
+    'pendingPayments' => 'المدفوعات المعلقة',
+
+    'canceledOrders' => 'الطلبات الملغاة',
+
+    'totalOrders' => 'إجمالي الطلبات',
+
+    'totalQuantitySold' => 'إجمالي الكمية المباعة',
+
+    'sumOfTotalRevenue' => 'إجمالي الإيرادات',
+
+    'totalCharges' => 'إجمالي الرسوم',
+
+    'itemReportMessage' => 'شوف تفاصيل مبيعات الأصناف وأدائها',
+
+    'salesReportMessage' => 'تابع مبيعات وأرباح مطعمك',
+
+    'categoryReportMessage' => 'شوف مبيعات كل تصنيف وتعرّف على مستوى أدائه',
+
+    'printLogMessage' => 'شوف سجل الطباعة وحالة المهام من :startDate إلى :endDate',
+
+    'totalPrintJobs' => 'إجمالي مهام الطباعة',
+
+    'pendingJobs' => 'المهام المعلقة',
+
+    'completedJobs' => 'المهام المكتملة',
+
+    'failedJobs' => 'المهام الفاشلة',
+
+    'printerStatistics' => 'إحصائيات الطابعة',
+
+    'printJobDetails' => 'تفاصيل مهمة الطباعة',
+
+    'basicInformation' => 'المعلومات الأساسية',
+
+    'printContent' => 'محتوى الطباعة',
+
+    'noContentAvailable' => 'ما فيه محتوى متاح',
+
+    'retryPrint' => 'إعادة الطباعة',
+
+    'printJobNotFound' => 'مهمة الطباعة غير موجودة',
+
+    'printJobNotFoundMessage' => 'تعذر العثور على مهمة الطباعة المطلوبة أو ما عندك صلاحية لعرضها.',
+
+    'paymentMethods' => 'طرق الدفع',
+
+    'traditionalPayments' => 'طرق الدفع',
+
+    'paymentGateways' => 'بوابات الدفع',
+
+    'additionalAmounts' => 'المبالغ الإضافية',
+
+    'salesDataFor' => 'بيانات المبيعات لـ',
+
+    'timePeriod' => 'الفترة الزمنية',
+
+    'salesDataFrom' => 'بيانات المبيعات من',
+
+    'salesDataTo' => 'بيانات المبيعات إلى',
+
+    'timePeriodEachDay' => 'الفترة الزمنية لكل يوم',
+
+    'timePeriodEachMonth' => 'الفترة الزمنية لكل شهر',
+
+    'timePeriodEachYear' => 'الفترة الزمنية لكل سنة',
+    'NumberCustomer' => 'عدد العملاء',
+    'repeatCustomer'=>'عملاء متكررون',
+    'returningCustomers' => 'العملاء المتكررون',
+    'returningOrders' => 'طلبات العملاء المتكررين',
+    'returningRevenue' => 'إيرادات العملاء المتكررين',
+],
+
 ];

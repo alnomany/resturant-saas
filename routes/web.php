@@ -133,6 +133,9 @@ Route::middleware(['auth', config('jetstream.auth_session'), 'verified', LocaleM
     Route::resource('menu-items', MenuItemController::class);
     Route::resource('item-categories', ItemCategoryController::class);
     Route::resource('item-modifiers', ItemModifierController::class);
+    //slider
+    Route::get('Slider', [ItemModifierController::class, 'slider'])->name('slider');
+
     Route::resource('modifier-groups', ModifierGroupController::class);
     Route::get('sort-entities', [MenuController::class, 'unifiedSort'])->name('entities.sort');
     Route::resource('areas', AreaController::class);

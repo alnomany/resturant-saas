@@ -13,6 +13,8 @@ return array(
     'orders' => 'Orders',
     'pos' => 'POS',
     'kot' => 'KOT',
+    'sliders'=>'سلايدر',
+
     'myAccount' => 'My Account',
     'myOrders' => 'My Orders',
     'customers' => 'Customers',
