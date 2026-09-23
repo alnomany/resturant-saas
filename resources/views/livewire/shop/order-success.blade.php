@@ -8,6 +8,58 @@
 
         @lang('messages.orderPlacedSuccess')
     </h2>
+    {{-- ============ كارت التهنئة بالنقاط المكتسبة ============ --}}
+@if($earnedPoints > 0)
+    <div
+        x-data="{ show: true }"
+        x-show="show"
+        x-init="setTimeout(() => new Audio('{{ asset('sound/points_earned.mp3') }}').play().catch(() => {}), 400)"
+        x-transition:enter="transition ease-out duration-500"
+        x-transition:enter-start="opacity-0 -translate-y-3 scale-95"
+        x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+        class="relative overflow-hidden rounded-3xl border border-amber-200/70
+               bg-gradient-to-br from-amber-50 via-orange-50 to-white
+               dark:from-gray-800 dark:to-gray-800 dark:border-gray-700
+               p-5 shadow-sm"
+    >
+        <!-- زخرفة إشعاعية -->
+        <div class="absolute -top-8 -right-8 w-28 h-28 bg-amber-300/25 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="absolute -bottom-6 -left-6 w-20 h-20 bg-orange-300/20 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="relative flex items-center gap-4">
+            <!-- أيقونة الفوز / الكأس -->
+            <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500
+                        flex items-center justify-center shadow-lg shadow-amber-300/50 animate-bounce">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                        d="M9 21h6M12 17v4M7 4h10v4a5 5 0 01-10 0V4zM7 4H4a2 2 0 002 2h1V4zm10 0h3a2 2 0 01-2 2h-1V4z"/>
+                </svg>
+            </div>
+
+            <div class="min-w-0 flex-1">
+                <div class="flex items-center gap-1.5">
+                    <p class="text-sm font-black text-gray-900 dark:text-white">
+                        مبروك! تم إضافة نقاط لحسابك 🎉
+                    </p>
+                </div>
+                <div class="mt-1 flex items-baseline gap-1.5">
+                    <span class="text-2xl font-black text-amber-600 dark:text-amber-400">+{{ number_format($earnedPoints) }}</span>
+                    <span class="text-sm font-bold text-gray-700 dark:text-gray-300">نقطة</span>
+                </div>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                    استخدمها لاحقاً للحصول على خصم في طلباتك القادمة
+                </p>
+            </div>
+
+            <!-- زر إغلاق -->
+            <button @click="show = false" class="flex-shrink-0 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+@endif
 
 
     <div >
@@ -105,6 +157,23 @@
                         <dt class="font-normal text-gray-500 dark:text-gray-400"> @lang('modules.order.subTotal')</dt>
                         <dd class="font-medium text-gray-900 dark:text-white">{{ currency_format($order->sub_total, $restaurant->currency_id) }}</dd>
                     </dl>
+                    @if ($order->discount_amount)
+                        <dl class="flex items-center justify-between gap-4 text-sm text-gray-500 dark:text-gray-400">
+                            <dt class="font-normal">@lang('modules.order.discount')</dt>
+                            <dd class="font-medium text-gray-900 dark:text-white">-{{ currency_format($order->discount_amount, $restaurant->currency_id) }}</dd>
+                        </dl>
+                    @endif
+                    @if ($order->points_discount > 0)
+                        <dl class="flex items-center justify-between gap-4 text-sm text-emerald-600 dark:text-emerald-400 font-medium">
+                            <dt class="font-normal inline-flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                خصم نقاط الولاء ({{ $order->points_used }} نقطة)
+                            </dt>
+                            <dd class="font-bold">-{{ currency_format($order->points_discount, $restaurant->currency_id) }}</dd>
+                        </dl>
+                    @endif
 
                     @if ($order->discount_amount)
                         <dl class="flex items-center justify-between gap-4 text-sm text-gray-500 dark:text-gray-400">
@@ -198,6 +267,7 @@
                 });
                 PUSHER.connection.bind('connected', () => {
                     console.log('✅ Pusher connected for Order Success!');
+                    
                 });
                 channel.bind('pusher:subscription_succeeded', () => {
                     console.log('✅ Subscribed to order-success channel!');

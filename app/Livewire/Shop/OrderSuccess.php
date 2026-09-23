@@ -6,6 +6,7 @@ use App\Models\Branch;
 use App\Models\Order;
 use Livewire\Component;
 
+
 class OrderSuccess extends Component
 {
 
@@ -13,6 +14,8 @@ class OrderSuccess extends Component
     public $order;
     public $restaurant;
     public $shopBranch;
+        public $earnedPoints = 0;   // النقاط المكتسبة من هذا الطلب
+
 
     public function mount()
     {
@@ -27,6 +30,11 @@ class OrderSuccess extends Component
         } else {
             $this->shopBranch = $this->restaurant->branches->first();
         }
+            // جلب النقاط المكتسبة من هذا الطلب تحديداً
+        $this->earnedPoints = (int) DB::table('loyalty_transactions')
+            ->where('order_id', $this->order->id)
+            ->where('type', 'earn')
+            ->sum('points');
     }
 
     public function render()

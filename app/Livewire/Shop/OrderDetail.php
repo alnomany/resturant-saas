@@ -18,6 +18,8 @@ use App\Notifications\SendOrderBill;
 use Illuminate\Support\Facades\Http;
 use App\Models\PaymentGatewayCredential;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
+use Illuminate\Support\Facades\DB; 
+
 
 class OrderDetail extends Component
 {
@@ -44,10 +46,13 @@ class OrderDetail extends Component
     public bool $usePoints = false;
     public $pointsDiscount = 0;
     public $points = 0;
+    
 
     //loyatly
     public $pointValue = 1; // قيمة النقطة الافتراضية بالريال
     public $availablePoints = 0;
+            public $earnedPoints = 0;   // النقاط المكتسبة من هذا الطلب
+
 
     use LivewireAlert;
 
@@ -90,6 +95,10 @@ class OrderDetail extends Component
         $this->canAddTip = $this->restaurant->enable_tip_shop && $this->order->status !== 'paid';
         $this->tipAmount = $this->order->tip_amount;
         $this->tipNote = $this->order->tip_note;
+        $this->earnedPoints = (int) DB::table('loyalty_transactions')
+            ->where('order_id', $this->order->id)
+            ->where('type', 'earn')
+            ->sum('points');
     }
 
 
