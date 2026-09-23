@@ -41,7 +41,9 @@ use App\Models\PaymentGatewayCredential;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
  use App\Models\Coupon;
 use Carbon\Carbon;
-use App\Services\TelegramService; 
+use App\Services\TelegramService;
+use App\Services\LoyaltyService;
+use Illuminate\Support\Facades\DB; 
 
 class Cart extends Component
 {
@@ -119,8 +121,18 @@ class Cart extends Component
     public $coupon = null;
     public $couponSuccess = false;
     public $discount = 0;
+    public bool $usePoints = false;
+    
+
+    //loyatly
+    public $pointValue = 1; // قيمة النقطة الافتراضية بالريال
+    public $availablePoints = 0;
     public function mount()
     {
+        //loyatly
+        // جلب مجموع رصيد نقاطه الحالية من جدول الحركات (مثلاً 800 نقطة)
+
+        $this->pointValue = config('loyalty.point_value', 1);
         if ($this->tableID) {
             $this->table = Table::where('hash', $this->tableID)->firstOrFail();
             $restaurant = $this->table->branch->restaurant;
@@ -449,10 +461,21 @@ public function removeCoupon()
         $this->total += (float)$this->deliveryFee ?: 0;
                 // طرح الخصم
         $this->total -= $this->discount;
+        //خصم النقاط
+        if ($this->usePoints) {
+            $this->total -= (float)$this->pointsDiscount;
+        }
+
+    
 
         // منع أن يصبح الإجمالي سالباً
         $this->total = max(0, $this->total);
     }
+    public function updatedUsePoints($value)
+{
+    $this->calculateTotal();
+    // للفحص فقط - احذفها بعدين
+}
 
     public function UpdatedOrderType($value)
     {
@@ -686,8 +709,47 @@ public function removeCoupon()
                 'estimated_eta_min' => $this->etaMin ?? null,
                 'estimated_eta_max' => $this->etaMax ?? null,
                 'placed_via' => 'shop',
+                'points_used'     => $this->usePoints ? $this->points : 0,
+                'points_discount' => $this->usePoints ? $this->pointsDiscount : 0,
             ]);
         }
+        // 2. تسجيل النقاط المكتسبة للعميل في جدول loyalty_transactions
+// ==========================================
+if ($this->customer) {
+    
+    // حدد معادلة النقاط المكتسبة بناءً على رغبتك (مثلاً: نقطة عن كل ريال من إجمالي السلة أو المجموع الفرعي)
+    $pointsEarned = floor($this->total); // أو يمكنك جعلها نسبة معينة مثل $this->total * 0.1
+    // النقاط المستخدمة: تُشتق من رصيد العميل والخصم الفعلي، وليس من الفاتورة
+    $pointsUsed = $this->usePoints
+        ? min((int) ceil($this->pointsDiscount / $this->pointValue), $this->points)
+        : 0;
+    if ($pointsEarned > 0) {
+        // إدخال سجل جديد في جدول الحركات
+        DB::table('loyalty_transactions')->insert([
+            'customer_id'   => $this->customer->id,
+            'restaurant_id' => $this->restaurant->id,
+            'order_id'      => $order->id,
+            'type'          => 'earn', // نوع الحركة كسب كما هو مستخدم لديك في الجدول
+            'points'        => $pointsEarned, // القيمة بالموجب لأنه يكسبها
+            'description'   => 'مكافأة نقاط للطلب رقم #' . $order->order_number,
+            'created_at'    => now(),
+            'updated_at'    => now(),
+        ]);
+    }
+}
+// 2. أ) [حالة الاستخدام والخصم]: إذا كان العميل قد فعل خيار استخدام النقاط واستخدم نقاطاً حقيقية
+    if ($this->usePoints && $pointsUsed > 0) {
+        DB::table('loyalty_transactions')->insert([
+            'customer_id'   => $this->customer->id,
+            'restaurant_id' => $this->restaurant->id,
+            'order_id'      => $order->id,
+            'type'          => 'redeem', // أو spend (حسب المسمى المعتمد عندك في الجدول للحركات الخارجة)
+            'points'        => -$pointsUsed, // القيمة بالسالب لكي تخصم من رصيده التراكمي
+            'description'   => 'استخدام نقاط في الطلب #' . $order->order_number,
+            'created_at'    => now(),
+            'updated_at'    => now(),
+        ]);
+    }
 
         if ($this->customer && $this->orderType === 'delivery' && !empty($this->deliveryAddress) && isset($deliverySetting)) {
             $this->customer->delivery_address = $this->deliveryAddress;
@@ -778,9 +840,14 @@ public function removeCoupon()
 
         $this->total += $order->tip_amount ?? 0;
         $this->total -= $this->discount;
+               //خصم النقاط
+        if ($this->usePoints) {
+            $this->total -= (float)$this->pointsDiscount;
+        }
 
         // لا تجعل الإجمالي أقل من صفر
         $this->total = max(0, $this->total);
+        $this->total =  $this->total;
 
          TelegramService::sendOrderNotification($order);
 
@@ -820,6 +887,7 @@ public function removeCoupon()
                 $coupon->increment('used');
             }
         }
+
             $this->sendNotifications($order);
             TelegramService::sendOrderNotification($order);
             \App\Services\TelegramService::sendOrderNotification($order);
@@ -836,7 +904,14 @@ public function removeCoupon()
         }
 
     }
-
+//loyatly
+            public function getEarnedPointsProperty()
+                {
+                    // مثال: كل 10 ريال/راند تعطيه نقطة واحدة (عدّلا المعامل حسب نظامك)
+                    $conversionRate = 1; 
+                    
+                    return floor($this->subTotal * $conversionRate);
+                }
     public function initiatePayment($id)
     {
         $total = round($this->total, 2);
@@ -1235,7 +1310,66 @@ public function removeCoupon()
             ? max(array_map(fn($item) => $item->preparation_time ?? 0, $this->orderItemList))
             : 0;
     }
+    //loyatly
+    public function getCustomerProperty()
+{
+    return $this->getCurrentCustomer();
+}
+public function getCurrentCustomer()
+{
+    // 1. الفحص عبر Guard الخاص بالعميل في Auth
+    if (auth('customer')->check()) {
+        return auth('customer')->user();
+    }
 
+    // 2. الفحص عبر Auth العام
+    if (auth()->check()) {
+        return auth()->user();
+    }
+
+    // 3. الفحص عبر Session المخصصة بالعميل
+    if (session()->has('customer_id')) {
+        return \App\Models\Customer::find(session('customer_id'));
+    }
+
+    return null;
+}
+
+public function getPointsProperty(LoyaltyService $loyaltyService)
+{
+    $customer = $this->customer; // تستدعي الخاصية السابقة تلقائياً
+
+    // إذا كان العميل مسجل دخول والمطعم معرف
+    if ($customer && $this->restaurant) {
+        return $loyaltyService->getCustomerBalanceForRestaurant(
+            $customer->id,
+            $this->restaurant->id
+        );
+    }
+
+    return 0; // إذا لم يكن مسجلاً أو لا يوجد مطعم، فالنقاط 0
+}
+// 1. خاصية محسوبة لحساب قيمة الخصم المطبق بالريال
+public function getPointsDiscountProperty()
+{
+    // إذا لم يفعّل العميل مفتاح استخدام النقاط، فالخصم 0
+    if (!$this->usePoints) {
+        return 0;
+    }
+
+    // جلب نقاط العميل وقيمة النقطة
+    $points = $this->points; // مثلاً 100 نقطة
+    $pointValue = config('loyalty.point_value', .1); // مثلاً 0.05 ريال
+
+    // 1. حساب القيمة المادية الكلية للنقاط
+    $maxPointsValue = $points * $pointValue; // 100 * 0.05 = 5 ر.س
+
+    // 2. جلب إجمالي السلة (قبل خصم النقاط)
+    $subtotal = $this->subTotal; 
+
+    // 3. الخصم النهائي هو الأصغر بين (قيمة النقاط) و (إجمالي السلة)
+    return min($maxPointsValue, $subtotal);
+}
     public function render()
     {
         $locale = session('locale', app()->getLocale());
@@ -1290,6 +1424,7 @@ public function removeCoupon()
         }])->where('branch_id', $this->shopBranch->id)->orderBy('sort_order')->get();
 
         $menuList = Menu::withoutGlobalScopes()->where('branch_id', $this->shopBranch->id)->withCount('items')->orderBy('sort_order')->get();
+
 
         return view('livewire.shop.cart', [
             'menuItems' => $query,

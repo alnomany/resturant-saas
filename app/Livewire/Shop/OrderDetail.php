@@ -41,11 +41,22 @@ class OrderDetail extends Component
     public $tipAmount;
     public $tipNote;
     public $showTipModal = false;
+    public bool $usePoints = false;
+    public $pointsDiscount = 0;
+    public $points = 0;
+
+    //loyatly
+    public $pointValue = 1; // قيمة النقطة الافتراضية بالريال
+    public $availablePoints = 0;
 
     use LivewireAlert;
 
     public function mount()
     {
+              //loyatly
+        $this->pointValue = config('loyalty.point_value', 1);
+        $this->pointsDiscount = $this->order->points_discount ?? 0;
+        $this->points = $this->order->points_used ?? 0;
 
         $customer = customer();
         $this->order = Order::withoutGlobalScopes()
@@ -492,7 +503,66 @@ class OrderDetail extends Component
         }
     }
 
+   //loyatly
+    public function getCustomerProperty()
+{
+    return $this->getCurrentCustomer();
+}
+public function getCurrentCustomer()
+{
+    // 1. الفحص عبر Guard الخاص بالعميل في Auth
+    if (auth('customer')->check()) {
+        return auth('customer')->user();
+    }
 
+    // 2. الفحص عبر Auth العام
+    if (auth()->check()) {
+        return auth()->user();
+    }
+
+    // 3. الفحص عبر Session المخصصة بالعميل
+    if (session()->has('customer_id')) {
+        return \App\Models\Customer::find(session('customer_id'));
+    }
+
+    return null;
+}
+
+public function getPointsProperty(LoyaltyService $loyaltyService)
+{
+    $customer = $this->customer; // تستدعي الخاصية السابقة تلقائياً
+
+    // إذا كان العميل مسجل دخول والمطعم معرف
+    if ($customer && $this->restaurant) {
+        return $loyaltyService->getCustomerBalanceForRestaurant(
+            $customer->id,
+            $this->restaurant->id
+        );
+    }
+
+    return 0; // إذا لم يكن مسجلاً أو لا يوجد مطعم، فالنقاط 0
+}
+// 1. خاصية محسوبة لحساب قيمة الخصم المطبق بالريال
+public function getPointsDiscountProperty()
+{
+    // إذا لم يفعّل العميل مفتاح استخدام النقاط، فالخصم 0
+    if (!$this->usePoints) {
+        return 0;
+    }
+
+    // جلب نقاط العميل وقيمة النقطة
+    $points = $this->points; // مثلاً 100 نقطة
+    $pointValue = config('loyalty.point_value', .1); // مثلاً 0.05 ريال
+
+    // 1. حساب القيمة المادية الكلية للنقاط
+    $maxPointsValue = $points * $pointValue; // 100 * 0.05 = 5 ر.س
+
+    // 2. جلب إجمالي السلة (قبل خصم النقاط)
+    $subtotal = $this->subTotal; 
+
+    // 3. الخصم النهائي هو الأصغر بين (قيمة النقاط) و (إجمالي السلة)
+    return min($maxPointsValue, $subtotal);
+}
     public function render()
     {
         return view('livewire.shop.order-detail');

@@ -331,6 +331,22 @@
                             {{ currency_format($order->sub_total, $restaurant->currency_id) }}
                         </span>
                     </div>
+                    @php
+                        $points = $this->points;
+                        $usePoints = $this->usePoints ?? false;
+                        $pointsDiscount = $this->pointsDiscount ?? 0;
+                    @endphp
+
+@if($pointsDiscount > 0)
+    <div class="flex justify-between text-sm text-emerald-600 dark:text-emerald-400 font-medium">
+        <div>
+            @lang('modules.order.loyaltyDiscount', [], 'خصم نقاط الولاء')
+        </div>
+        <div>
+            -{{ currency_format($pointsDiscount, $restaurant->currency_id ?? 1) }}
+        </div>
+    </div>
+@endif
 
                     @if (!is_null($order->discount_amount))
                         <div wire:key="discountAmount"

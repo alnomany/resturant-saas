@@ -26,4 +26,24 @@ class Customer extends BaseModel
     {
         return $this->hasMany(CustomerAddress::class)->orderBy('id', 'desc');
     }
+
+
+    //* حساب إجمالي النقاط المتاحة للعميل في مطعم معين
+    public function getLoyaltyBalance(int $restaurantId): int
+{
+    // حساب النقاط المكتسبة
+    $earned = $this->loyaltyTransactions()
+        ->where('restaurant_id', $restaurantId)
+        ->where('type', 'earn')
+        ->sum('points');
+
+    // حساب النقاط المستبدلة (المستخدمة)
+    $redeemed = $this->loyaltyTransactions()
+        ->where('restaurant_id', $restaurantId)
+        ->where('type', 'redeem')
+        ->sum('points');
+
+    // الصافي المتاح للعميل
+    return max(0, $earned - $redeemed);
+}
 }

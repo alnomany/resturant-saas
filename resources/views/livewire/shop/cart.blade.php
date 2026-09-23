@@ -338,7 +338,7 @@
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                         </div>
                         <div class="text-right">
-                            <p class="text-[10px] opacity-70 font-bold uppercase tracking-widest">@lang('modules.order.totalItem')</p>
+                            <p class="text-[10px] opacity-70 font-bold uppercase tracking-widest">@lang('modules.order.totalItem') 1</p>
                             <p class="text-lg font-black leading-none">{{ $cartQty }}</p>
                         </div>
                     </div>
@@ -540,6 +540,74 @@
                                     </div>
                                 @endif
                             </div>
+                            
+                              <!-- Loyalty Reward -->
+<div class="mt-3">
+    <div class="relative overflow-hidden rounded-2xl border border-amber-200/70
+                bg-gradient-to-l from-amber-50 via-orange-50/70 to-white
+                px-4 py-3 shadow-sm">
+
+        <!-- Decorative Glow -->
+        <div class="absolute -left-5 -top-5 h-16 w-16 rounded-full
+                    bg-amber-300/20 blur-2xl"></div>
+
+        <div class="relative flex items-center gap-3">
+
+            <!-- Icon -->
+            <div class="flex h-11 w-11 shrink-0 items-center justify-center
+                        rounded-xl bg-gradient-to-br from-amber-400 to-orange-500
+                        shadow-md shadow-amber-200">
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     class="h-6 w-6 text-white"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M20 12v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-8m16 0H4m16 0V9a1 1 0 0 0-1-1h-3.5M4 12V9a1 1 0 0 1 1-1h3.5m0 0a3 3 0 1 1 6 0m-6 0h6"/>
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M12 8v13"/>
+                </svg>
+            </div>
+
+            <!-- Text -->
+            <div class="min-w-0 flex-1">
+
+                <div class="flex items-center gap-1.5">
+                    <span class="text-xs font-medium text-gray-500">
+                        مكافأة هذا الطلب
+                    </span>
+
+                    <span class="text-[10px]">✨</span>
+                </div>
+
+                <div class="mt-0.5 flex items-baseline gap-1.5">
+                    <strong class="text-xl font-extrabold text-amber-600">
+                        {{ $this->earnedPoints }}
+                    </strong>
+
+                    <span class="text-xs font-bold text-gray-700">
+                        نقطة
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Reward Message -->
+            <div class="hidden sm:block text-left">
+                <div class="text-[11px] font-medium text-gray-500">
+                    تجمعها مع كل طلب
+                </div>
+
+                <div class="mt-0.5 text-xs font-bold text-gray-800">
+                    واستبدلها بمكافآت 🎁
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
                         </div>
                     </div>
                 </div>
@@ -696,7 +764,177 @@
 
                             </div>
                                                         <!--coupon code -->
+                            <!-- loyalty ---------------->
 
+                            <!-- قسم نقاط الولاء - شريط تفاعلي أنيق -->
+@php
+
+$points = $this->points;
+$usePoints = $this->usePoints ?? false;
+$pointsDiscount = $points * $pointValue;
+   $discountPercent = $this->subTotal > 0
+        ? min(100, round(($pointsDiscount / $this->subTotal) * 100))
+        : 0;
+    $pointsValueTotal = $points * $pointValue;
+    $currencyCode = $this->restaurant->currency->currency_code ?? 'ر.س';
+@endphp
+
+@if($customer)
+@if($points > 0)
+    <!-- ============ كارت نقاط الولاء - تصميم احترافي ============ -->
+    <div
+        x-data="{ open: @entangle('usePoints').live }"
+        class="relative overflow-hidden rounded-3xl border transition-all duration-300"
+        :class="open
+            ? 'border-amber-300 shadow-lg shadow-amber-500/10 bg-white dark:bg-gray-800'
+            : 'border-amber-200/70 bg-gradient-to-br from-amber-50 via-orange-50/60 to-white dark:from-gray-800 dark:to-gray-800 dark:border-gray-700'"
+    >
+        <!-- زخرفة خلفية -->
+        <div class="absolute -top-10 -right-10 w-32 h-32 bg-amber-300/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-10 -left-10 w-24 h-24 bg-orange-300/10 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="relative p-4 sm:p-5">
+
+            <!-- الصف العلوي: الأيقونة + الرصيد + المفتاح -->
+            <div class="flex items-center justify-between gap-3">
+                <div class="flex items-center gap-3 min-w-0">
+                    <!-- أيقونة بتدرج لوني -->
+                    <div class="relative flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-md shadow-amber-300/40">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <!-- نقطة تنبيه صغيرة -->
+                        <span class="absolute -top-1 -left-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-white dark:border-gray-800 flex items-center justify-center">
+                            <svg class="w-2 h-2 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                        </span>
+                    </div>
+
+                    <div class="min-w-0">
+                        <h4 class="text-sm font-bold text-gray-800 dark:text-gray-100 flex items-center gap-1.5">
+                            نقاط الولاء المتاحة
+                        </h4>
+                        <div class="flex items-baseline gap-1.5 mt-0.5 flex-wrap">
+                            <span class="text-lg font-black text-amber-600 dark:text-amber-400 leading-none">{{ number_format($points) }}</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">نقطة</span>
+                            <span class="text-[11px] text-gray-400 dark:text-gray-500">
+                                (≈ {{ number_format($pointsValueTotal, 2) }} {{ $currencyCode }})
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مفتاح تفعيل بتصميم أوضح -->
+                <label class="relative inline-flex items-center cursor-pointer flex-shrink-0 group">
+                    <input type="checkbox" wire:model.live="usePoints" class="sr-only peer">
+                    <div class="w-14 h-8 bg-gray-200 dark:bg-gray-600 rounded-full peer
+                                peer-checked:bg-gradient-to-r peer-checked:from-amber-400 peer-checked:to-orange-500
+                                transition-colors duration-300 shadow-inner
+                                peer-focus:ring-4 peer-focus:ring-amber-200 dark:peer-focus:ring-amber-900">
+                    </div>
+                    <div class="absolute top-1 start-1 bg-white w-6 h-6 rounded-full shadow-md
+                                transition-transform duration-300 flex items-center justify-center
+                                peer-checked:translate-x-[-1.5rem] rtl:peer-checked:translate-x-[1.5rem]">
+                        <svg x-show="open" class="w-3.5 h-3.5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    </div>
+                </label>
+            </div>
+
+            <!-- تلميح صغير قبل التفعيل -->
+            <div x-show="!open" x-transition class="mt-2">
+                <p class="text-xs text-gray-500 dark:text-gray-400">
+                    فعّل الخيار لخصم قيمة نقاطك من إجمالي طلبك تلقائياً
+                </p>
+            </div>
+
+            <!-- تفاصيل الخصم عند التفعيل -->
+            <div x-show="open" x-cloak
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 -translate-y-2"
+                x-transition:enter-end="opacity-100 translate-y-0"
+                class="mt-4"
+            >
+                <div class="rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 dark:from-gray-700/50 dark:to-gray-700/30 border border-amber-200/60 dark:border-gray-600 p-4 space-y-3">
+
+                    <!-- شريط تقدم يوضح نسبة تغطية النقاط للفاتورة -->
+                    <div>
+                        <div class="flex items-center justify-between text-[11px] font-bold text-gray-500 dark:text-gray-400 mb-1.5">
+                            <span>نسبة التغطية من الفاتورة</span>
+                            <span class="text-amber-600 dark:text-amber-400">{{ $discountPercent }}%</span>
+                        </div>
+                        <div class="w-full h-2 bg-white dark:bg-gray-800 rounded-full overflow-hidden shadow-inner">
+                            <div class="h-full bg-gradient-to-r from-amber-400 to-orange-500 rounded-full transition-all duration-500"
+                                 style="width: {{ $discountPercent }}%"></div>
+                        </div>
+                    </div>
+
+                    <!-- تفصيل الأرقام -->
+                    <div class="space-y-2 pt-1">
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600 dark:text-gray-300">المجموع الفرعي</span>
+                            <span class="font-semibold text-gray-800 dark:text-gray-100">
+                                {{ number_format((float)($this->subTotal ?? 0), 2) }} {{ $currencyCode }}
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600 dark:text-gray-300 inline-flex items-center gap-1.5">
+                                <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
+                                </svg>
+                                الخصم من النقاط
+                            </span>
+                            <span class="font-black text-emerald-600 dark:text-emerald-400">
+                                -{{ number_format($pointsDiscount, 2) }} {{ $currencyCode }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- شارة توضيحية -->
+                    <div class="flex items-center gap-1.5 pt-2 border-t border-amber-200/60 dark:border-gray-600">
+                        <svg class="w-3.5 h-3.5 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-[11px] text-gray-500 dark:text-gray-400">
+                            سيُخصم ما يعادل هذه القيمة من رصيد نقاطك عند تأكيد الطلب
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@else
+    <!-- ============ حالة عدم وجود نقاط - تصميم محفّز ============ -->
+    <div class="relative overflow-hidden rounded-3xl border border-amber-200/60 dark:border-gray-700
+                bg-gradient-to-br from-amber-50 via-white to-orange-50 dark:from-gray-800 dark:to-gray-800
+                p-4 sm:p-5">
+
+        <div class="absolute -top-6 -left-6 w-24 h-24 bg-amber-200/30 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="relative flex items-center gap-3">
+            <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-white dark:bg-gray-700 shadow-sm
+                        flex items-center justify-center text-2xl">
+                🎁
+            </div>
+
+            <div class="min-w-0 flex-1">
+                <p class="text-sm font-bold text-gray-900 dark:text-gray-100">
+                    @if($customer->name)
+                        مرحباً {{ $customer->name }}، رصيدك الحالي 0 نقطة
+                    @else
+                        رصيدك الحالي 0 نقطة
+                    @endif
+                </p>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-5">
+                    أكمل هذا الطلب لتبدأ بجمع نقاط الولاء واستبدالها بخصومات على طلباتك القادمة ✨
+                </p>
+            </div>
+        </div>
+    </div>
+@endif
+@endif
+
+<!--------------end loyalty--------------------->
                         </div>
 
                         <div class="flex justify-between text-sm text-gray-500 dark:text-gray-400">
@@ -741,6 +979,17 @@
                                 </div>
                             </div>
                         @endforeach
+                        {{-- خصم نقاط الولاء يظهر فقط عند تفعيل المفتاح ووجود خصم --}}
+                        @if($usePoints && $pointsDiscount > 0)
+                            <div class="flex justify-between text-sm text-emerald-600 dark:text-emerald-400 font-medium">
+                                <div>
+                                    @lang('modules.order.loyaltyDiscount', [], 'خصم نقاط الولاء')
+                                </div>
+                                <div>
+                                    -{{ currency_format($pointsDiscount, $restaurant->currency_id) }}
+                                </div>
+                            </div>
+                        @endif
 
                         @if ($orderType === 'delivery' && !is_null($deliveryFee))
                             <div class="flex justify-between text-sm text-gray-500 dark:text-gray-400">
@@ -1277,6 +1526,7 @@
         <x-slot name="title">
             @lang('modules.menu.itemVariations')
         </x-slot>
+   
 
         <x-slot name="content">
             @if ($menuItem)

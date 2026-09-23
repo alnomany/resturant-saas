@@ -10,39 +10,51 @@ use Illuminate\Support\Facades\Log;
 
 class LoyaltyService
 {
-    /**
-     * قيمة النقطة – اجعلها متغيرة عبر env
-     */
     protected float $pointValue;
-
-    /**
-     * نسبة اكتساب النقاط
-     */
     protected float $earnRate;
 
     public function __construct()
     {
-        $this->pointValue = config('loyalty.point_value', 1); // قيمة النقطة = 1 ريال
-        $this->earnRate   = config('loyalty.earn_rate', 0.10); // earn 10%
+        $this->pointValue = config('loyalty.point_value', 1); // قيمة النقطة بالريال
+        $this->earnRate   = config('loyalty.earn_rate', 0.10); // نسبة الكسب 10%
     }
 
     /**
-     * استخدم نقاط الولاء وتطبيق الخصم بشكل آمن واحترافي
+     * حساب رصيد العميل لمطعم محدد
      */
+    public function getCustomerBalanceForRestaurant(int $customerId, int $restaurantId): int
+    {
+        $earned = LoyaltyTransaction::where('customer_id', $customerId)
+            ->where('restaurant_id', $restaurantId)
+            ->where('type', 'earn')
+            ->sum('points');
 
-    //ahmed
+        $redeemed = LoyaltyTransaction::where('customer_id', $customerId)
+            ->where('restaurant_id', $restaurantId)
+            ->where('type', 'redeem')
+            ->sum('points');
+
+        return max(0, $earned - abs($redeemed));
+    }
+
+    /**
+     * استخدام نقاط الولاء وتطبيق الخصم للطلب
+     */
     public function applyPoints(Customer $customer, Order $order, int $pointsToRedeem): Order
     {
         return DB::transaction(function () use ($customer, $order, $pointsToRedeem) {
 
-            // التأكد من الرصيد
-            $pointsToUse = min($pointsToRedeem, $customer->loyalty_points);
+            // جلب الرصيد الحقيقي المتاح للعميل في هذا المطعم تحديداً
+            $availableBalance = $this->getCustomerBalanceForRestaurant($customer->id, $order->restaurant_id);
+
+            // التأكد من عدم تجاوز الرصيد المتاح
+            $pointsToUse = min($pointsToRedeem, $availableBalance);
 
             if ($pointsToUse <= 0) {
                 return $order;
             }
 
-            // تحويل النقاط لخصم مالي
+            // تحويل النقاط لخصم مالي (بحد أقصى المجموع الفرعي للطلب)
             $discount = min($pointsToUse * $this->pointValue, $order->subtotal);
 
             // تحديث الطلب
@@ -50,26 +62,30 @@ class LoyaltyService
             $order->final_amount = max($order->subtotal - $discount, 0);
             $order->save();
 
-            // تحديث رصيد العميل
-            $customer->decrement('loyalty_points', $pointsToUse);
+            // تسجيل حركة الخصم (تسجل بقيمة سالبة لضبط العمليات الحسابية)
+            $this->logTransaction(
+                customerId: $customer->id,
+                restaurantId: $order->restaurant_id,
+                orderId: $order->id,
+                type: 'redeem',
+                points: $pointsToUse, // السيرفس سيتكفل بتحويلها إلى قيمة سالبة
+                description: "Redeemed {$pointsToUse} points for order #{$order->id}"
+            );
 
-            // تسجيل الحركة
-            $this->logTransaction($customer->id, $order->id, 'redeem', $pointsToUse, "Redeemed {$pointsToUse} points for order #{$order->id}");
-
-            Log::info("Customer {$customer->id} used {$pointsToUse} points on order #{$order->id}");
+            Log::info("Customer {$customer->id} used {$pointsToUse} points on order #{$order->id} for restaurant #{$order->restaurant_id}");
 
             return $order;
         });
     }
 
     /**
-     * حساب النقاط المكتسبة وإضافتها لرصيد العميل
+     * حساب النقاط المكتسبة وإضافتها لرصيد العميل للمطعم
      */
     public function calculateEarnedPoints(Order $order): int
     {
         return DB::transaction(function () use ($order) {
 
-            // النقاط = نسبة من final_amount
+            // النقاط = نسبة من الصافي المدفوع
             $earned = (int) floor($order->final_amount * $this->earnRate);
 
             if ($earned <= 0) {
@@ -80,43 +96,46 @@ class LoyaltyService
             $order->points_earned = $earned;
             $order->save();
 
-            // إضافة النقاط لرصيد العميل
-            $order->customer->increment('points_balance', $earned);
-
-            // تسجيل الحركة
+            // تسجيل الحركة وإسنادها للمطعم
             $this->logTransaction(
                 customerId: $order->customer_id,
+                restaurantId: $order->restaurant_id,
                 orderId: $order->id,
                 type: 'earn',
                 points: $earned,
                 description: "Earned {$earned} points from order #{$order->id}",
-                expiresAt: now()->addMonths(12) // مثال: صلاحية سنة
+                expiresAt: now()->addMonths(12)
             );
 
-            Log::info("Points Earned: Customer {$order->customer_id} earned {$earned} points.");
+            Log::info("Points Earned: Customer {$order->customer_id} earned {$earned} points for restaurant #{$order->restaurant_id}.");
 
             return $earned;
         });
     }
 
     /**
-     * تسجيل حركة نقاط بشكل منظم
+     * تسجيل حركة نقاط
      */
     protected function logTransaction(
         int $customerId,
+        int $restaurantId,
         int $orderId,
         string $type,
         int $points,
         string $description,
         $expiresAt = null
     ) {
+        // إذا كانت الحركة خصم، نقوم بحفظها بقيمة سالبة
+        $finalPoints = ($type === 'redeem') ? -abs($points) : abs($points);
+
         return LoyaltyTransaction::create([
-            'customer_id' => $customerId,
-            'order_id'    => $orderId,
-            'type'        => $type,
-            'points'      => $points,
-            'description' => $description,
-            'expires_at'  => $expiresAt,
+            'customer_id'   => $customerId,
+            'restaurant_id' => $restaurantId,
+            'order_id'      => $orderId,
+            'type'          => $type,
+            'points'        => $finalPoints,
+            'description'   => $description,
+            'expires_at'    => $expiresAt,
         ]);
     }
 }

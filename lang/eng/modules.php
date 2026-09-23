@@ -97,6 +97,8 @@ return [
     ],
 
     'order' => [
+      'loyaltyDiscount'=>'loyaltyDiscount',
+
         'qty' => 'QTY',
         'price' => 'Price',
         'amount' => 'Amount',

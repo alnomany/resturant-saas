@@ -96,6 +96,7 @@ return [
     ],
 
     'order' => [
+        'loyaltyDiscount'=>'الخصم المطبق من النقاط',
         'qty' => 'الكمية',
         'price' => 'السعر',
         'amount' => 'المبلغ',
