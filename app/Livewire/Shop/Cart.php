@@ -152,6 +152,12 @@ class Cart extends Component
             abort(404);
         }
 
+    $this->customer = customer();
+
+
+    // ✅ الإضافة الجديدة: تحقق من انتماء العميل للمطعم الحالي
+    $this->resolveCustomerForCurrentRestaurant();
+
         $this->paymentGateway = PaymentGatewayCredential::withoutGlobalScopes()->where('restaurant_id', $this->restaurant->id)->first();
         $this->taxes = Tax::withoutGlobalScopes()->where('restaurant_id', $this->restaurant->id)->get();
         $this->customer = customer();
@@ -173,6 +179,54 @@ class Cart extends Component
         $this->qrCodeImage = $this->restaurant->qr_code_image;
         $this->UpdatedOrderType($this->orderType);
     }
+    /**
+ * يتأكد أن العميل الحالي مرتبط بهذا المطعم تحديداً.
+ * لو كان العميل مسجلاً بمطعم مختلف، ينشئ له نسخة جديدة خاصة بهذا المطعم
+ * وينسخ بياناته الأساسية فقط (اسم، إيميل، جوال).
+ */
+protected function resolveCustomerForCurrentRestaurant()
+{
+    if (!$this->customer) {
+        return;
+    }
+
+    // العميل أصلاً مسجل بنفس مطعمك، ما فيه شي نسوّيه
+    if ($this->customer->restaurant_id == $this->restaurant->id) {
+        return;
+    }
+
+    // العميل من مطعم مختلف: دوّر له سجل موجود مسبقاً بمطعمك (بنفس الجوال أو الإيميل)
+    $existingLocalCustomer = null;
+
+    if (!empty($this->customer->phone)) {
+        $existingLocalCustomer = Customer::where('restaurant_id', $this->restaurant->id)
+            ->where('phone', $this->customer->phone)
+            ->first();
+    }
+
+    if (!$existingLocalCustomer && !empty($this->customer->email)) {
+        $existingLocalCustomer = Customer::where('restaurant_id', $this->restaurant->id)
+            ->where('email', $this->customer->email)
+            ->first();
+    }
+
+    if ($existingLocalCustomer) {
+        // عنده سجل سابق بمطعمك، استخدمه
+        $this->customer = $existingLocalCustomer;
+    } else {
+        // ما عنده سجل، أنشئ له نسخة جديدة خاصة بمطعمك
+        $this->customer = Customer::create([
+            'name'              => $this->customer->name,
+            'email'             => $this->customer->email,
+            'phone'             => $this->customer->phone,
+            'delivery_address'  => $this->customer->delivery_address,
+            'restaurant_id'     => $this->restaurant->id,
+        ]);
+    }
+
+    // حدّث الـ session بالعميل الصحيح الجديد
+    session(['customer' => $this->customer]);
+}
 
     public function filterMenuItems($id)
     {
@@ -620,6 +674,8 @@ public function removeCoupon()
 
     public function placeOrder($pay = false, $updateOrder = null, $method = null)
     {
+            // ✅ تأكيد إضافي قبل إنشاء الطلب
+            $this->resolveCustomerForCurrentRestaurant();
         if ($updateOrder) {
             $this->order = Order::find($updateOrder);
 

@@ -48,8 +48,7 @@ class AddCustomer extends Component
                 $this->customerPhone = $customer->phone;
                 $this->customerEmail = $customer->email;
                 $this->customerAddress = $customer->delivery_address;
-                //ahmed
-                // $this->updateLoyaltyValues();
+               
             }
         }
         $this->fromPos = $fromPos ?? false;

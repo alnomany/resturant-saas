@@ -19,7 +19,11 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
     {
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
+            // واجعل الفحص يتجاهل المطعم الحالي أو المعرف المطلوب
+        Rule::unique('customers', 'email')->where(function ($query) use ($restaurantId) {
+            return $query->where('restaurant_id', $restaurantId);
+        })->ignore($user->id ?? null),
+          //  'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
             'photo' => ['nullable', 'mimes:jpg,jpeg,png', 'max:1024'],
         ])->validateWithBag('updateProfileInformation');
 
