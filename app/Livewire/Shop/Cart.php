@@ -44,6 +44,7 @@ use Carbon\Carbon;
 use App\Services\TelegramService;
 use App\Services\LoyaltyService;
 use Illuminate\Support\Facades\DB; 
+use App\Services\Tracker;
 
 class Cart extends Component
 {
@@ -122,6 +123,7 @@ class Cart extends Component
     public $couponSuccess = false;
     public $discount = 0;
     public bool $usePoints = false;
+    public $hasTrackedCart = false; // لمنع تكرار إنشاء السجل مع كل حركة بسيطة
     
 
     //loyatly
@@ -152,11 +154,11 @@ class Cart extends Component
             abort(404);
         }
 
-    $this->customer = customer();
+        $this->customer = customer();
 
 
-    // ✅ الإضافة الجديدة: تحقق من انتماء العميل للمطعم الحالي
-    $this->resolveCustomerForCurrentRestaurant();
+        // ✅ الإضافة الجديدة: تحقق من انتماء العميل للمطعم الحالي
+        $this->resolveCustomerForCurrentRestaurant();
 
         $this->paymentGateway = PaymentGatewayCredential::withoutGlobalScopes()->where('restaurant_id', $this->restaurant->id)->first();
         $this->taxes = Tax::withoutGlobalScopes()->where('restaurant_id', $this->restaurant->id)->get();
@@ -410,6 +412,7 @@ public function removeCoupon()
             $this->orderItemAmount[$id] = $this->orderItemQty[$id] * ($basePrice + ($this->orderItemModifiersPrice[$id] ?? 0));
             $this->cartItemQty[$id] = isset($this->cartItemQty[$this->menuItem->id]) ? ($this->cartItemQty[$this->menuItem->id] + 1) : 1;
             $this->calculateTotal();
+            Tracker::once('add_to_cart');
                     // إرسال الحدث إلى GTM
         $this->dispatch('gtm-add-to-cart', [
             'item_id' => $this->menuItem->id,
@@ -524,6 +527,7 @@ public function removeCoupon()
 
         // منع أن يصبح الإجمالي سالباً
         $this->total = max(0, $this->total);
+        $this->syncAbandonedCart();
     }
     public function updatedUsePoints($value)
 {
@@ -628,7 +632,7 @@ public function removeCoupon()
         $this->customer->phone = $this->customerPhone;
         $this->customer->delivery_address = $this->customerAddress;
         $this->customer->save();
-
+        Tracker::once('complete_popup_done');
         session(['customer' => $this->customer]);
         $this->dispatch('setCustomer', customer: $this->customer);
 
@@ -671,9 +675,64 @@ public function removeCoupon()
             return $query->where('branch_id', $this->shopBranch->id)->where('status', 'active');
         }])->get();
     }
+    /**
+     * تُستدعى تلقائياً من Livewire فور تغير/إدخال رقم الجوال
+     */
+    public function updatedCustomerPhone($value)
+    {
+        $this->syncAbandonedCart();
+    }
 
+    /**
+     * تُستدعى تلقائياً من Livewire فور تغير/إدخال اسم العميل
+     */
+    public function updatedCustomerName($value)
+    {
+        $this->syncAbandonedCart();
+    }
+
+    /**
+     * الدالة الأساسية لحفظ أو تحديث السلة المتروكة في قاعدة البيانات
+     */
+    public function syncAbandonedCart()
+{
+    \Log::info('syncAbandonedCart called', ['sid' => session()->getId(), 'customer' => $this->customer?->id]);
+    
+    if (empty($this->orderItemQty) || !collect($this->orderItemQty)->contains(fn ($q) => $q > 0)) {
+        return;
+    }
+
+    $customer = $this->customer;
+
+    $cartData = [
+        'items'      => $this->orderItemList,
+        'quantities' => $this->orderItemQty,
+        'variations' => $this->orderItemVariation,
+        'amounts'    => $this->orderItemAmount,
+        'modifiers'  => $this->itemModifiersSelected,
+        'notes'      => $this->itemNotes,
+    ];
+
+    \App\Models\AbandonedCart::updateOrCreate(
+        [
+            'store_id'   => $this->restaurant->id,
+            'session_id' => session()->getId(),
+            'status'     => 'pending',
+        ],
+        [
+            'phone'          => $customer?->phone ?: ($this->customerPhone ?: null),
+            'name'           => $customer?->name ?: ($this->customerName ?: null),
+            'cart_data'      => $cartData,
+            'total_amount'   => $this->total ?? 0,
+            'last_active_at' => now(),
+        ]
+    );
+
+    $this->hasTrackedCart = true;
+}
     public function placeOrder($pay = false, $updateOrder = null, $method = null)
     {
+        Tracker::once('checkout_view');
             // ✅ تأكيد إضافي قبل إنشاء الطلب
             $this->resolveCustomerForCurrentRestaurant();
         if ($updateOrder) {
@@ -955,7 +1014,7 @@ if ($this->customer) {
                 'cancelButtonText' => __('app.close')
             ]);
             TelegramService::sendOrderNotification($order);
-
+            Tracker::once('purchase', ['order_id' => $order->id, 'value' => (float) $order->total]);
             $this->redirect(route('order_success', [$order->uuid]), true);
         }
 

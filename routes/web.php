@@ -50,11 +50,15 @@ use App\Http\Controllers\SuperAdmin\PayFastWebhookController;
 use App\Http\Controllers\SuperAdmin\PayfastController;
 use App\Http\Controllers\SuperAdmin\PaystackWebhookController;
 use App\Http\Controllers\SuperAdmin\PaystackController;
+use App\Livewire\Admin\TrackingDashboard;
+use App\Services\Tracker;
+use Illuminate\Http\Request;
 
 Route::get('/manifest.json', [HomeController::class, 'manifest'])->name('manifest');
 Route::get('/test', function () {
     return 'Print Test';
 });
+
 Route::get('/clear-session-secure', function() {
     // 1. تسجيل خروج من لارافيل
     auth()->logout();
@@ -82,6 +86,15 @@ Route::middleware([LocaleMiddleware::class])->group(function () {
     Route::get('page/{slug}', [CustomMenuController::class, 'index'])->name('customMenu');
 
 
+Route::get('/admin/tracking', TrackingDashboard::class)
+    ->middleware(['auth' /* + صلاحية الأدمن عندك */]);
+Route::view('/tracking', 'admin.tracking')->name('tracking');
+// للأحداث اللي تصير في الواجهة فقط (Alpine)
+Route::post('/track/event', function (Request $r) {
+    $name = $r->validate(['name' => 'required|in:complete_popup_view,complete_popup_done,checkout_view'])['name'];
+    Tracker::once($name);
+    return response()->noContent();
+})->middleware('throttle:30,1');
 
     Route::group(['prefix' => 'restaurant'], function () {
         Route::get('/table/{hash}', [ShopController::class, 'tableOrder'])->name('table_order')->where('id', '.*');
@@ -135,7 +148,12 @@ Route::middleware(['auth', config('jetstream.auth_session'), 'verified', LocaleM
     Route::resource('item-modifiers', ItemModifierController::class);
     //slider
     Route::get('Slider', [ItemModifierController::class, 'slider'])->name('slider');
-
+Route::view('/admin/abandoned-carts', 'admin.abandoned-carts')
+    ->middleware('auth')
+    ->name('admin.abandoned-carts');
+    Route::view('/admin/coupons', 'admin.coupons')
+    ->middleware('auth')
+    ->name('coupons.index');
     Route::resource('modifier-groups', ModifierGroupController::class);
     Route::get('sort-entities', [MenuController::class, 'unifiedSort'])->name('entities.sort');
     Route::resource('areas', AreaController::class);

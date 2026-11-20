@@ -5,6 +5,8 @@ namespace App\Livewire;
 use App\Models\Customer;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
+use App\Services\Tracker;
+
 
 class UpdateProfile extends Component
 {
@@ -30,6 +32,7 @@ class UpdateProfile extends Component
 
     public function submitForm()
     {
+        Tracker::once('complete_popup_view');
         $this->validate([
             'fullName' => 'required',
             'email' => 'required',

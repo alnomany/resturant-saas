@@ -23,17 +23,9 @@ class Slider extends Model
         'status' => 'boolean',
     ];
 
-    public function restaurant(): BelongsTo
-    {
-        return $this->belongsTo(Restaurant::class);
-    }
-
-    public function branch(): BelongsTo
-    {
-        return $this->belongsTo(Branch::class);
-    }
-
-    public function getImageUrlAttribute()
+    protected $appends = ['image_url', 'video_url'];
+   
+  public function getImageUrlAttribute()
     {
         return $this->image
             ? asset('storage/' . $this->image)
@@ -46,4 +38,40 @@ class Slider extends Model
             ? asset('storage/' . $this->video)
             : null;
     }
+    public function scopeForBranch($query, $branchId = null)
+{
+    return $query->where('status', 1)
+        ->where(function ($q) use ($branchId) {
+            $q->whereNull('branch_id');
+
+            if ($branchId) {
+                $q->orWhere('branch_id', $branchId);
+            }
+        })
+        ->orderBy('sort_order')
+        ->orderBy('id');
+}
+
+    protected function mediaUrl(?string $path): ?string
+    {
+        if (! $path) return null;
+        if (str_starts_with($path, 'http')) return $path;
+
+        // الملفات القديمة مثل images/cacke2.mp4 قد تكون في public مباشرة
+        return file_exists(public_path($path))
+            ? asset($path)
+            : asset('storage/' . $path);
+    }
+
+    public function restaurant(): BelongsTo
+    {
+        return $this->belongsTo(Restaurant::class);
+    }
+
+    public function branch(): BelongsTo
+    {
+        return $this->belongsTo(Branch::class);
+    }
+
+  
 }

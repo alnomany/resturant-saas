@@ -72,6 +72,10 @@ use App\Observers\NotificationSettingObserver;
 use Modules\Kitchen\Http\Livewire\KitchenPlaces;
 use App\Observers\KotItemObserver;
 use App\Models\KotItem;
+use App\Services\Tracker;
+use Illuminate\Auth\Events\Login;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Event;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -91,6 +95,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+            Livewire::component('item_modifiers.slider-item', \App\Livewire\ItemModifiers\SliderItem::class);
+
         if (config('app.redirect_https')) {
             URL::forceScheme('https');
         }
@@ -125,7 +131,8 @@ class AppServiceProvider extends ServiceProvider
         KotPlace::observe(KotPlaceObserver::class);
         Printer::observe(PrinterObserver::class);
         KotCancelReason::observe(KotCancelReasonObserver::class);
-
+        Event::listen(Login::class, fn () => Tracker::event('login'));
+        Event::listen(Registered::class, fn () => Tracker::event('register'));
 
 
 

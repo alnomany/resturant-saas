@@ -124,30 +124,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mx-auto max-w-lg lg:max-w-screen-xl min-h-svh shadow-md lg:shadow-none">
         @livewire('shopNavigation', ['restaurant' => $restaurant, 'shopBranch' => $shopBranch])
         @livewire('shopDesktopNavigation', ['restaurant' => $restaurant, 'shopBranch' => $shopBranch])
+        @php
+    $sliderRestaurant = $restaurant ?? null;
+    $sliderBranchId   = isset($shopBranch) ? $shopBranch->id : null;
+
+    $sliders = $sliderRestaurant
+        ? \App\Models\Slider::where('restaurant_id', $sliderRestaurant->id)
+            ->forBranch($sliderBranchId)
+            ->get()
+        : collect();
+@endphp
      <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                     @if($restaurant->id == 5)
+@foreach($sliders as $slider)
     <div class="swiper-slide">
-                           <img src="{{ asset('images/hereo44.png') }}" alt="Photo2" > 
-                    </div>
-                    <div class="swiper-slide"> 
-                          
-<video id="video" class="video" preload="metadata" playsinline="" autoplay="" muted="" loop="" poster="{{ asset('images/cake.jpg') }}">
-<source src="{{ asset('images/cacke2.mp4') }}" type="video/mp4"></video>
+        @if($slider->type === 'video' && $slider->video)
+            <video class="video" preload="metadata" playsinline autoplay muted loop>
+                <source src="{{ asset('storage/' . $slider->video) }}" type="video/mp4">
+            </video>
+        @elseif($slider->image)
+            @if($slider->link)
+                <a href="{{ $slider->link }}">
+                    <img src="{{ asset('storage/' . $slider->image) }}" alt="{{ $slider->title ?? 'Slide' }}">
 
+                </a>
+            @else
+                <img src="{{ asset('storage/' . $slider->image) }}" alt="{{ $slider->title ?? 'Slide' }}">
+            @endif
+        @endif
+    </div>
+@endforeach
 
-                    </div>
-                    @endif
-                    @if($restaurant->id != 5)
-                    <video id="video" class="video" preload="metadata" playsinline="" autoplay="" muted="" loop="" poster="{{ asset('images/hero2.jpg') }}">
-<source src="{{ asset('images/pizza.mp4') }}" type="video/mp4"></video>
-                    <div class="swiper-slide">
-                        <img src="{{ asset('images/hero1.png') }}" alt="Photo" >
-                    </div>
-                    <div class="swiper-slide">
-                           <img src="{{ asset('images/hero2.jpg') }}" alt="Photo2" > 
-                    </div>
-                    @endif
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>

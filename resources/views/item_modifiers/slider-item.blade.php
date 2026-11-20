@@ -2,7 +2,6 @@
 
 @section('content')
 
-@livewire('item_modifiers.slider-item')
-
+<livewire:item-modifiers.slider-item />
 @endsection
 

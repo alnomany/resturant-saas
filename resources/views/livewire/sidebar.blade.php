@@ -51,9 +51,22 @@
                             @livewire('sidebar-dropdown-menu', ['name' => __('menu.itemModifiers'), 'link' => route('item-modifiers.index'), 'active' => request()->routeIs('item-modifiers.index')])
                             @endif
                             @endif
+                            
                         </x-sidebar-dropdown-menu>
                         @endif
                         @endif
+                        <!-- ----->
+                         {{-- التسويق الرقمي --}}
+                        <x-sidebar-dropdown-menu name="التسويق الرقمي" icon='menu' :active='request()->routeIs(["slider.*", "admin.abandoned-carts", "coupons.index.*"])'>
+
+                            @livewire('sidebar-dropdown-menu', ['name' => 'السلايدر', 'link' => route('slider'), 'active' => request()->routeIs('slider')])
+
+                            @livewire('sidebar-dropdown-menu', ['name' => 'السلات المتروكة', 'link' => route('admin.abandoned-carts'), 'active' => request()->routeIs('admin.abandoned-carts')])
+
+                            @livewire('sidebar-dropdown-menu', ['name' => 'الكوبونات', 'link' => route('coupons.index'), 'active' => request()->routeIs('coupons.index.*')])
+
+                        </x-sidebar-dropdown-menu>
+                        <!-- ------>
 
                         @if ($this->hasModule('Area') || $this->hasModule('Table'))
                         @if (user_can('Show Area') || user_can('Show Table'))

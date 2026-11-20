@@ -109,9 +109,26 @@ class Signup extends Component
 
         $this->dispatch('setCustomer', customer: $customer);
 
+        if ($customer) {
+            // جلب معرف الجلسة السابق إن وجد، أو الحالي
+        $targetSessionId = session('previous_cart_session', session()->getId());
+        
+\App\Models\AbandonedCart::where('store_id', $customer->restaurant_id)
+            ->where('status', 'pending')
+            ->where(function ($query) use ($targetSessionId) {
+                $query->where('session_id', session()->getId())
+                      ->where('session_id', $targetSessionId);
+            })
+            ->update([
+                'phone' => $customer->phone,
+                'name'  => $customer->name,
+            ]);
+        
+
         $this->showSignupModal = false;
     }
-
+        }
+    
     public function sendVerification()
     {
         $this->customer->email_otp = random_int(100000, 999999);

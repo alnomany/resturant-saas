@@ -26,6 +26,8 @@ return Application::configure(basePath: dirname(__DIR__))
             '*/save-paypal-webhook/*',
             '*/payfast-notification/*'
         ]);
+    $middleware->web(append: [\App\Http\Middleware\TrackVisit::class]);
+
 
         // $middleware->alias([
         //     'xss' => \Froiden\Envato\Middleware\XSS::class,
