@@ -88,7 +88,7 @@ Route::middleware([LocaleMiddleware::class])->group(function () {
 
 Route::get('/admin/tracking', TrackingDashboard::class)
     ->middleware(['auth' /* + صلاحية الأدمن عندك */]);
-Route::view('/tracking', 'admin.tracking')->name('tracking');
+Route::view('/tracking1', 'admin.tracking')->name('tracking');
 // للأحداث اللي تصير في الواجهة فقط (Alpine)
 Route::post('/track/event', function (Request $r) {
     $name = $r->validate(['name' => 'required|in:complete_popup_view,complete_popup_done,checkout_view'])['name'];
