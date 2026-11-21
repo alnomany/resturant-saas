@@ -65,8 +65,8 @@
 
                             @livewire('sidebar-dropdown-menu', ['name' => 'الكوبونات', 'link' => route('coupons.index'), 'active' => request()->routeIs('coupons.index.*')])
                              @livewire('sidebar-dropdown-menu', ['name' => 'تحليل زائرين', 'link' => route('tracking'), 'active' => request()->routeIs('tracking')])
-//?utm_source=snapchat&utm_medium=paid&utm_campaign=اسم_الحملة&utm_content=اسم_الإعلان
-
+{{--?utm_source=snapchat&utm_medium=paid&utm_campaign=اسم_الحملة&utm_content=اسم_الإعلان
+--}}
                         </x-sidebar-dropdown-menu>
                         <!-- ------>
 
