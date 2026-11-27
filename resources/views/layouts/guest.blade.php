@@ -89,7 +89,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #444;
+      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -103,6 +103,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       height: 40vh;
       object-fit: cover;
     }
+    /* الجوال */
+@media (max-width: 767px) {
+    .swiper-slide img,
+    .swiper-slide video {
+        height: auto;
+    }
+}
     
 *{
   font-family: "Noto Sans Arabic", sans-serif !important;
